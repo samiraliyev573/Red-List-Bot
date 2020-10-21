@@ -15,7 +15,7 @@ Red List bot that informs you about endangered species
 
 5. Open terminal and navigate to the src folder
 
-6. Run train.py and then chat.py
+6. Run chat.py (if data.pth does not get clones, run train.py before chat.py)
 
 Enjoy the ChatBot ;)
 
