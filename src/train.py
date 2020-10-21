@@ -9,12 +9,11 @@ from model import NeuralNet
 
 # opening intents.json because it contains tags patterns and responses
 with open('intents.json', 'r') as i:
-    #load contents of json file into intents
+    # load contents of json file into intents
     intents = json.load(i)
 
 
-
-all_words= []
+all_words = []
 tags = []
 xy = []
 
@@ -27,11 +26,11 @@ for intent in intents['intents']:
         all_words.extend(w)
         xy.append((w, tag))
 
-#words to ignore
+# words to ignore
 ignore_words = ['?', '!', '.', ',']
-#stemming all_words except ignored words
+# stemming all_words except ignored words
 all_words = [stem(w) for w in all_words if w not in ignore_words]
-# since set has unique elements in it putting them 
+# since set has unique elements in it putting them
 # in a set and sorting makes unique sorted elements
 all_words = sorted(set(all_words))
 tags = sorted(set(tags))
@@ -52,21 +51,26 @@ for(pattern_sentence, tag) in xy:
 X_train = np.array(X_train)
 Y_train = np.array(Y_train)
 
-#chatdataset class
+# chatdataset class
+
+
 class ChatDataSet(Dataset):
     # init funciton
     def __init__(self):
-        self.n_samples= len(X_train)
+        self.n_samples = len(X_train)
         self.x_data = X_train
         self.y_data = Y_train
-    #getter function
+    # getter function
+
     def __getItem__(self, index):
         return self.x_data[index], self.y_data[index]
-    #lenfth function
+    # lenfth function
+
     def __len__(self):
         return self.n_samples
 
-#hyperparameters
+
+# hyperparameters
 batch_size = 8
 hidden_size = 8
 output_size = len(tags)
@@ -74,15 +78,14 @@ input_size = len(X_train[0])
 learning_rate = 0.001
 num_epochs = 1000
 
-print(input_size, len(all_words))
-print(output_size, tags)
 
 dataset = ChatDataSet()
-train_loader = DataLoader(dataset=dataset, batch_size=batch_size, shuffle=True,num_workers=0)
+train_loader = DataLoader(
+    dataset=dataset, batch_size=batch_size, shuffle=True, num_workers=0)
 
 # checking for cpu support
 #device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-device = 'cpu'
+device = torch.device('cpu')
 model = NeuralNet(input_size, hidden_size, output_size).to(device)
 
 # loss and optimizer
@@ -97,17 +100,17 @@ for epoch in range(num_epochs):
         words = words.to(device)
         labels = labels.to(device)
 
-        #forward
+        # forward
         outputs = model(words)
 
         loss = criterion(outputs, labels)
 
-        #backwards and optimizer step
+        # backwards and optimizer step
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
     if (epoch+1) % 100 == 0:
-        print (f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}')
+        print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}')
 
 print(f'final loss: {loss.item():.4f}')
 
@@ -125,5 +128,3 @@ FILE = "data.pth"
 torch.save(data, FILE)
 
 print(f'training complete.file saved to {FILE}')
-
-    

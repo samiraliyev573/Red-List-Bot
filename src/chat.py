@@ -30,16 +30,16 @@ bot_name = "Red List Bot"
 print("Let's chat! type 'quit' to exit")
 while True:
     sentence = input('You: ')
-    if sentence =='quit':
+    if sentence == 'quit':
         break
-        
+
     sentence = tokenize(sentence)
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
     X = torch.from_numpy(X)
 
     output = model(X)
-    _, predicted = torch.max(output, dim = 1)
+    _, predicted = torch.max(output, dim=1)
     tag = tags[predicted.item()]
     # check if the probability of this tag is high enough
     probs = torch.softmax(output, dim=1)
@@ -52,6 +52,3 @@ while True:
                 print(f"{bot_name}: {random.choice(intent['responses'])}")
     else:
         print(f"{bot_name}: I do not understand...")
-
-
-
