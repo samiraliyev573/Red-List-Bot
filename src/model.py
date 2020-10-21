@@ -9,8 +9,8 @@ class NeuralNet(nn.Module):
         super(NeuralNet, self).__init__()
         # 3 linear layers
         self.l1 = nn.Linear(input_size, hidden_size)
-        self.l1 = nn.Linear(hidden_size, hidden_size)
-        self.l1 = nn.Linear(hidden_size, num_classes)
+        self.l2 = nn.Linear(hidden_size, hidden_size)
+        self.l3 = nn.Linear(hidden_size, num_classes)
 
         # activation function
         self.relu = nn.ReLU()

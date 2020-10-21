@@ -62,7 +62,7 @@ class ChatDataSet(Dataset):
         self.y_data = Y_train
     # getter function
 
-    def __getItem__(self, index):
+    def __getitem__(self, index):
         return self.x_data[index], self.y_data[index]
     # length function
 
@@ -97,7 +97,7 @@ optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 for epoch in range(num_epochs):
     for (words, labels) in train_loader:
         words = words.to(device)
-        labels = labels.to(device)
+        labels = labels.to(dtype=torch.long).to(device)
 
         # forward
         outputs = model(words)
