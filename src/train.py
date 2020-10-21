@@ -64,7 +64,7 @@ class ChatDataSet(Dataset):
 
     def __getItem__(self, index):
         return self.x_data[index], self.y_data[index]
-    # lenfth function
+    # length function
 
     def __len__(self):
         return self.n_samples
@@ -83,8 +83,7 @@ dataset = ChatDataSet()
 train_loader = DataLoader(
     dataset=dataset, batch_size=batch_size, shuffle=True, num_workers=0)
 
-# checking for cpu support
-#device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
 device = torch.device('cpu')
 model = NeuralNet(input_size, hidden_size, output_size).to(device)
 
@@ -96,7 +95,7 @@ optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 # training loop
 
 for epoch in range(num_epochs):
-    for words, labels in train_loader:
+    for (words, labels) in train_loader:
         words = words.to(device)
         labels = labels.to(device)
 
