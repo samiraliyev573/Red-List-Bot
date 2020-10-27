@@ -45,6 +45,18 @@
       ]
     },
     {
+      "tag": "question",
+      "patterns": [
+        "What can you do for me? ",
+        "What are you capable of?",
+        "What are you good at?"
+      ],
+      "responses": [
+        "I know about every endangered species on this planet. Some of them need your help",
+        "I am good at tracking endangered species, see what happened to them and how to protect them"
+      ]
+    },
+    {
       "tag": "about",
       "patterns": [
         "What is RedList?",
