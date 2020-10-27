@@ -9,13 +9,18 @@ Red List bot that informs you about endangered species
 
 2. Have python installed (python 3.6+ )
 
-3. Run pip install nltk
+3. Have anaconda installed. (In windows when downloading anaconda, check the box that says add anaconda to path environment variables.)
 
-4. Run pip install torch torchvision if you are in mac or Run pip install torch===1.6.0 torchvision===0.7.0 -f https://download.pytorch.org/whl/torch_stable.html
+4. Now we create anaconda environment so whatever we do will be outside our system and wont do any harm to our currently installed packages. Type 'conda create -n projenv python = 3.8'
 
-5. Open terminal and navigate to the src folder
+5. Now open terminal and navigate to the src folder of the project(You can also do it by opening in visual studio code and selecting new terminal.)
 
-6. Run chat.py (if data.pth does not get cloned, run train.py before chat.py)
+6. Inside the src folder, type 'conda activate projenv'. Now our virtual environment is active inside this folder. Only thing left is to install necessary packages. 
+  Run: 'conda install pytorch torchvision torchaudio cpuonly -c pytorch' if in windows or 
+  conda install pytorch torchvision torchaudio -c pytorch if in macos.
+  Run 'conda install nltk'
+7. Last step is to type 'python chat.py' which will run the python file.
+
 
 Enjoy the ChatBot ;)
 
