@@ -11,10 +11,23 @@
         "Good day"
       ],
       "responses": [
-        "Hey :-)",
-        "Hello, thanks for visiting",
-        "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
+        "Hey :-) I'm a chat bot about endangered species!",
+        "Hello, thanks for visiting. I'm a chatbot about endangered species.",
+        "Hi there, ask me about endangered species!",
+        "Hi there, how can I help you to learn more about endangered species?"
+      ]
+    },
+    {
+      "tag": "whatIsEndangered",
+      "patterns": [
+	"What is an endangered species?",
+	"What are endangered species?",
+	"What does it mean for an animal to be endangered?",
+	"What does it mean for a species to be endangered?"
+      ],
+	"responses": [
+        "Endangered species are animals, mammals, birds and even fish in danger of extinction!",
+        "Endangered species are forms of life near extinction!"
       ]
     },
     {
@@ -83,8 +96,8 @@
     {
       "tag": "plants",
       "patterns": [
-        "What plants are in RedList ?",
-        "What plants are about to extinct ?",
+        "What plants are in RedList?",
+        "What plants are about to extinct?",
         "When do I get my delivery?"
       ],
       "responses": [
@@ -102,6 +115,172 @@
       "responses": [
         "I feel the same",
         "Sad to see humans being ignorant of nature"
+      ]
+    },
+    {
+      "tag": "whatAnimalsAreEndangered",
+      "patterns": [
+        "Which animals are endangered?",
+        "What are some endangered animals?",
+        "What are some endangered animals names?",
+        "Can you name an endangered animal?",
+        "Tell me the name of an endangered animal?",
+	"Can you tell me the name of another endangered animal?",
+	"Tell me some more endangered animals!",
+	"Tell me about another endangered animal!"
+      ],
+      "responses": [
+        "Rhinos are one such animal.",
+        "Orangutans are endangered. They risk going extinct.",
+	"Amur Leopard is in danger of going extinct! It has beautiful fur!"
+      ]
+    },
+    {
+      "tag": "tellMeMoreAboutRhinos",
+      "patterns": [
+        "I love Rhinos!",
+	"Tell me about Rhinos!",
+	"Tell me more about rhinoceros",
+        "Tell me more about Rhinos!",
+	"Tell me another Rhino fact!",
+        "Tell me a fact about Rhinos!"
+      ],
+      "responses": [
+        "Rhinos are very large grey animals. They weight between 1,700 and 3,100 pounds.",
+        "Rhinos love to sit in the water and take long cold baths to keep cool.",
+	"There was a Teenage Mutant Ninja villain based on a mutant Rhino!",
+	"One of Spiderman's nemesis was a Rhino!",
+	"Well, they look a lot like you. Big, fat and slow.",
+	"Rhinoceros live up to 40 years old in the wild!",
+	"Adult Rhinos are 6 feet tall and 11 feet long!",
+	"A charging Rhino can reach up to 50 km per hour! They are as fast as a car in a city!"
+      ]
+    },
+    {
+      "tag": "RhinosSize",
+      "patterns": [
+        "How big is a Rhino?",
+        "How big is a Rhinoceros?",
+	"How large is a Rhino?",
+	"How large is a Rhinoceros?"
+      ],
+      "responses": [
+	"Adult Rhinos are 6 feet tall and 11 feet long!"
+      ]
+    },
+    {
+      "tag": "RhinosLifespan",
+      "patterns": [
+        "How long does a Rhino live?",
+        "How long does a Rhinoceros live?",
+        "What is the lifespan of a Rhinoceros?",
+        "What is the lifespan of a Rhino?",
+	"What is a Rhino's lifespan?",
+	"What is a Rhinoceros' lifespan?",
+	"In the wild, how long does a Rhino live?",
+	"In the wild, how long does a Rhinoceros live?"
+      ],
+      "responses": [
+	"Rhinoceros live up to 40 years old in the wild!"
+      ]
+    },
+    {
+      "tag": "RhinosSpeed",
+      "patterns": [
+        "How fast is a Rhino?",
+        "How fast is a Rhinoceros?",
+	"How quick is a Rhino?",
+	"How quick is a Rhinoceros?",
+	"How quickly can a Rhino move?",
+	"How quickly can a Rhinoceros move?"
+      ],
+      "responses": [
+	"A charging Rhino can reach up to 50 km per hour! They are as fast as a car in a city!"
+      ]
+    },
+    {
+      "tag": "tellMeMoreAboutOrangutan",
+      "patterns": [
+        "I love Orangutans!",
+	"Tell me about Orangutans!",
+	"Tell me more about a Orangutan",
+        "Tell me more about Orangutans!",
+        "Tell me a fact about Orangutan!",
+        "Tell me more facts about Orangutans!",
+	"Tell me another Orangutan fact!"
+      ],
+      "responses": [
+        "A lot of people link they are a monkey but they are actually great apes!",
+        "They have very wide, flat grey shape around their face so they can blend in to the enviroment!",
+	"The fur of an Orangutan is reddish orange!",
+	"Orangutans can climb trees!",
+	"Orangutans are vegetarians.",
+	"A female Orangutans needs 8 years between births!",
+	"They live to be about 35-45 years old!"
+      ]
+    },
+    {
+      "tag": "whatIsAnRhino",
+      "patterns": [
+	"What is a Rhinoceros?",
+        "What is a Rhino?",
+	"What are Rhinos?"
+      ],
+      "responses": [
+        "Rhinos are very large grey animals. They weight between 1,700 and 3,100 pounds."
+      ]
+    },
+    {
+      "tag": "whatIsAnOrangutan",
+      "patterns": [
+	"What is a Orangutan?",
+        "What is are Orangutans?"
+      ],
+      "responses": [
+        "An Orangutan is a great ape!"
+      ]
+    },
+    {
+      "tag": "whatIsALeopard",
+      "patterns": [
+	"What is a Leopard?",
+	"What is a Amur Leopard?",
+	"What is are Amur Leopards?",
+        "What are Leopards?"
+      ],
+      "responses": [
+        "Leopards are like very big, very fast cats in the wild!"
+      ]
+    },
+    {
+      "tag": "tellMeMoreAbout Amur Leopard",
+      "patterns": [
+        "I love Amur Leopards!",
+	"Tell me about Amur Leopards!",
+	"Tell me more about Amur Leopards",
+        "Tell me even more about Amur Leopards!",
+        "I love Leopards!",
+	"Tell me about Leopards!",
+	"Tell me more about Leopards",
+        "Tell me even more about Leopards!",
+	"Tell me another Leopard fact!",
+        "Tell me a fact about Leopards!"
+      ],
+      "responses": [
+        "Amur Leopards are very fast! They can run 37 miles per hour!",
+        "Be careful around Amur Leopards! They can jump 19 feet horizontally and 10 feet vertically!",
+	"Sadly, there are only 16 to 26 Amur Leopards left in the wild.."
+      ]
+    },
+    {
+      "tag": "LeopardsSpeed",
+      "patterns": [
+        "How fast is a Leopard?",
+	"How quick is a Leopard?",
+	"How quickly can a Leopard move?"
+      ],
+      "responses": [
+	        "Amur Leopards are very fast! They can run 37 miles per hour!"
       ]
     }
   ]
