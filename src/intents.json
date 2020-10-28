@@ -85,8 +85,6 @@
       "patterns": [
         "Which animals are in red list?",
         "What animals are extinct?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
       ],
       "responses": [
         "There are many animals in RedList. Those include but not limited to Verreaux's Sifaka, Madame Berthe's Mouse Lemur",
@@ -98,7 +96,6 @@
       "patterns": [
         "What plants are in RedList?",
         "What plants are about to extinct?",
-        "When do I get my delivery?"
       ],
       "responses": [
         "Arctic plant, Brazil Plant, Bryophyte and many more",
