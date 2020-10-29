@@ -196,6 +196,20 @@
       ]
     },
     {
+      "tag": "RhinosLeft",
+      "patterns": [
+        "How many Rhinos remain?",
+        "How many Rhinos are left?",
+        "How close are Rhinos to going extinct?",
+        "How many Rhinoceros remain?",
+        "How many Rhinoceros are left?",
+        "How close are Rhinoceros to going extinct?"
+      ],
+      "responses": [
+        "Sadly, there are only 27,000 left in the wild today...and in 1970, there were 70,000!"
+      ]
+    },
+    {
       "tag": "tellMeMoreAboutOrangutan",
       "patterns": [
         "I love Orangutans!",
@@ -234,7 +248,7 @@
         "What is are Orangutans?"
       ],
       "responses": [
-        "An Orangutan is a great ape!"
+        "An Orangutan is a great ape! It looks like a dwarf!"
       ]
     },
     {
@@ -266,7 +280,7 @@
       "responses": [
         "Amur Leopards are very fast! They can run 37 miles per hour!",
         "Be careful around Amur Leopards! They can jump 19 feet horizontally and 10 feet vertically!",
-        "Sadly, there are only 16 to 26 Amur Leopards left in the wild.."
+        "Sadly, there are only 16 to 26 Amur Leopards left in the wild..."
       ]
     },
     {
@@ -274,10 +288,27 @@
       "patterns": [
         "How fast is a Leopard?",
         "How quick is a Leopard?",
-        "How quickly can a Leopard move?"
+        "How quickly can a Leopard move?",
+        "How fast is a Amur Leopard?",
+        "How quick is a Amur Leopard?",
+        "How quickly can a Amur Leopard move?"
       ],
       "responses": [
         "Amur Leopards are very fast! They can run 37 miles per hour!"
+      ]
+    },
+    {
+      "tag": "LeopardsLeft",
+      "patterns": [
+        "How many Amur Leopards remain?",
+        "How many Amur Leopards are left?",
+        "How close are Amur Leopards to going extinct?",
+        "How many Leopards remain?",
+        "How many Leopards are left?",
+        "How close are Leopards to going extinct?"
+      ],
+      "responses": [
+        "Sadly, there are only 16 to 26 Amur Leopards left in the wild..."
       ]
     }
   ]
