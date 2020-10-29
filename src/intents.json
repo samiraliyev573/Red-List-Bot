@@ -145,7 +145,7 @@
       "responses": [
         "Rhinos are very large grey animals. They weight between 1,700 and 3,100 pounds.",
         "Rhinos love to sit in the water and take long cold baths to keep cool.",
-        "There was a Teenage Mutant Ninja villain based on a mutant Rhino!",
+        "There was a Teenage Mutant Ninja Turtle villain based on a mutant Rhino!",
         "One of Spiderman's nemesis was a Rhino!",
         "Well, they look a lot like you. Big, fat and slow.",
         "Rhinoceros live up to 40 years old in the wild!",
@@ -309,6 +309,46 @@
       ],
       "responses": [
         "Sadly, there are only 16 to 26 Amur Leopards left in the wild..."
+      ]
+    },
+    {
+      "tag": "NaturalResponseLongTime",
+      "patterns": [
+        "That's a long time!",
+        "That's so long!",
+        "So they are pregnant for 8 years?!",
+        "That's forever"
+      ],
+      "responses": [
+        "I know. It is a very long time. It is hard to believe."
+      ]
+    },
+    {
+      "tag": "NaturalResponseLoveTMNT",
+      "patterns": [
+        "I love Teenage Mutant Ninja Turtles!",
+        "I love TMNT",
+        "TMNT is so cool",
+        "TMNT is awesome",
+        "TMNT is great",
+        "Ninja Turtles are so cool",
+        "Ninja Turtles are awesome",
+        "Ninja Turtles are great"
+      ],
+      "responses": [
+        "Donatello was my favorite Ninja Turtle but I'm partial to Shredder. My grandfather was a shredder!"
+      ]
+    },
+    {
+      "tag": "NaturalResponseLoveSpiderman",
+      "patterns": [
+        "I love Spiderman!",
+        "Spiderman is so cool",
+        "Spiderman is awesome",
+        "Spiderman is great"
+      ],
+      "responses": [
+        "Nobody spins a web like Spiderman can!"
       ]
     }
   ]
