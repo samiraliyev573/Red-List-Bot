@@ -16,6 +16,7 @@
         "Hello, thanks for visiting. I'm a chatbot about endangered species.",
         "Hi there, ask me about endangered species!",
         "Hi there, how can I help you to learn more about endangered species?"
+
       ]
     },
     {
@@ -28,7 +29,8 @@
       "responses": [
         "See you later, thanks for visiting",
         "Have a nice day",
-        "Bye! Come back again soon."
+        "Bye! Come back again soon.",
+        "Hope to see you soon"
       ]
     },
     {
