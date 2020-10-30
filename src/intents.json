@@ -447,7 +447,19 @@
         "How can I give money to WFF?",
         "How can I donate money to WFF?",
 	"How do I give money to WFF?",
-	"How do I donate money to WFF?"
+	"How do I donate money to WFF?",
+        "Where can I give money?",
+        "Where can I donate money?",
+	"Where do I give money?",
+	"Where do I donate money?",
+        "Where can I give money to the World Wildlife Foundation?",
+        "Where can I donate money to the World Wildlife Foundation?",
+	"Where do I give money to the World Wildlife Foundation?",
+	"Where do I donate money to the World Wildlife Foundation?",
+        "Where can I give money to WFF?",
+        "Where can I donate money to WFF?",
+	"Where do I give money to WFF?",
+	"Where do I donate money to WFF?"
       ],
       "responses": [
         "You can donate money via WFF's website at https://www.worldwildlife.org/"
