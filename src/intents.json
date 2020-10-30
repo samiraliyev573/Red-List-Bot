@@ -345,7 +345,8 @@
       "responses": [
         "Amur Leopards are very fast! They can run 37 miles per hour!",
         "Be careful around Amur Leopards! They can jump 19 feet horizontally and 10 feet vertically!",
-        "Sadly, there are only 16 to 26 Amur Leopards left in the wild..."
+        "Sadly, there are only 16 to 26 Amur Leopards left in the wild...",
+	"In the wild, an Amur leopard, lives about as long as a housecat. 10 to 15 years!"
       ]
     },
     {
@@ -360,6 +361,30 @@
       ],
       "responses": [
         "Amur Leopards are very fast! They can run 37 miles per hour!"
+      ]
+    },
+    {
+      "tag": "LeopardLifespan",
+      "patterns": [
+        "How long does a Leopard live?",
+        "How long do Leopards live?",
+        "What is the lifespan of a Leopard?",
+        "What is the lifespan of Leopards?",
+        "What is a Leopard's lifespan?",
+        "What are Leopards' lifespans?",
+        "In the wild, how long does a Leopard live?",
+        "In the wild, how long do Leopards live?",
+        "How long does an Amur Leopard live?",
+        "How long do Amur Leopards live?",
+        "What is the lifespan of an Amur Leopard?",
+        "What is the lifespan of Amur Leopards?",
+        "What is a Leopard's lifespan?",
+        "What are Amur Leopards' lifespans?",
+        "In the wild, how long does an Amur Leopard live?",
+        "In the wild, how long do Amur Leopards live?"
+      ],
+      "responses": [
+        "Just like a housecat, an Amur Leopard will live around 10-15 years."
       ]
     },
     {
@@ -386,6 +411,18 @@
       ],
       "responses": [
         "I know. It is a very long time. It is hard to believe."
+      ]
+    },
+    {
+      "tag": "NaturalResponseImpressed",
+      "patterns": [
+        "Neat!",
+        "Cool!",
+        "Awesome!"
+      ],
+      "responses": [
+        "I know. It is a very cool fact.",
+	"Yes, it's pretty impressive, isn't it?"
       ]
     },
     {
@@ -439,7 +476,7 @@
         "Ninja Turtles are great"
       ],
       "responses": [
-        "Donatello was my favorite Ninja Turtle but I'm partial to Shredder. My grandfather was a shredder!"
+        "Agreed! I love the Ninja Turtles. Donatello was my favorite Ninja Turtle but I'm partial to Shredder. My grandfather was a shredder!"
       ]
     },
     {
@@ -451,7 +488,8 @@
         "Spiderman is great"
       ],
       "responses": [
-        "Nobody spins a web like Spiderman can!"
+        "Haha. Nobody spins a web like Spiderman can!",
+	"The spiderman TV series from the 90s was the best one!"
       ]
     }
   ]
