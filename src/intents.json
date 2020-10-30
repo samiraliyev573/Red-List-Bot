@@ -235,6 +235,9 @@
         "Orangutans can climb trees!",
         "Orangutans are vegetarians.",
         "A female Orangutans needs 8 years between births!",
+	"Adult Orangutan males can weigh up to 300 pounds!",
+	"The armspan of an Orangutan is 8 feet from finger tip to finger tip!",
+	"Think we are the only ones with opposable thumbs? No! Orangutans have opposable thumbs too!",
         "They live to be about 35-45 years old!"
       ]
     },
@@ -329,6 +332,44 @@
       ],
       "responses": [
         "I know. It is a very long time. It is hard to believe."
+      ]
+    },
+    {
+      "tag": "NaturalResponseSoFast",
+      "patterns": [
+        "That's so fast!",
+        "That's so quick!",
+	"That's fast!",
+        "They move so fast!",
+        "They move so quick!",
+	"I can't believe how fast they move!",
+	"I can't believe how quick they move!",
+	"I can't believe how quickly they move!",
+	"I can't believe how fast they are!",
+	"I can't believe how quick they are!"
+      ],
+      "responses": [
+        "I know. Creatures in the Animal Kingdom make us humans look so slow!"
+      ]
+    },
+    {
+      "tag": "NaturalResponseSoBigOrHeavy",
+      "patterns": [
+        "That's so big!",
+        "That's so large!",
+	"That's so huge!",
+	"That's so heavy!",
+        "That's big!",
+        "That's large!",
+	"That's huge!",
+	"That's heavy!",
+	"I can't believe how big they are!",
+	"I can't believe how large they are!",
+	"I can't believe how much they weigh!",
+	"I can't believe how heavy they are!"
+      ],
+      "responses": [
+        "I know. When I first heard this fact, I could hardly believe the size of these creatures! They look so small on TV!"
       ]
     },
     {
