@@ -119,7 +119,15 @@
       "patterns": [
         "Which animals are endangered?",
         "What are some endangered animals?",
-        "What are some endangered animals names?",
+        "What are some endangered animals names?"
+      ],
+      "responses": [
+        "The Amur Leopard, Rhinos and Orangutans are all at risk of going extinct!"
+      ]
+    },
+    {
+      "tag": "whatAnimalIsEndangered",
+      "patterns": [
         "Can you name an endangered animal?",
         "Tell me the name of an endangered animal?",
         "Can you tell me the name of another endangered animal?",
