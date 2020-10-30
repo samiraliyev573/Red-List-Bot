@@ -127,7 +127,8 @@
       "tag": "sad",
       "patterns": [
         "I feel sorry",
-        "I am very sad"
+        "I am very sad",
+        ""
       ],
       "responses": [
         "I feel the same",
@@ -429,7 +430,8 @@
         "How can I help the orangutans?"
       ],
       "responses": [
-        "There are many charitable organizations who accept donations that help endangered animals like the World Wildlife Fund (WFF)."
+        "There are many charitable organizations who accept donations that help endangered animals like the World Wildlife Foundation (WFF).",
+        "First and foremost, you should educate yourself about endangered species and help."
       ]
     },
     {
@@ -437,45 +439,33 @@
       "patterns": [
         "How can I give money?",
         "How can I donate money?",
-	"How do I give money?",
-	"How do I donate money?",
-        "How can I give money to the World Wildlife Fund?",
-        "How can I donate money to the World Wildlife Fund?",
-	"How do I give money to the World Wildlife Fund?",
-	"How do I donate money to the World Wildlife Fund?",
+        "How do I give money?",
+        "How do I donate money?",
+        "How can I give money to the World Wildlife Foundation?",
+        "How can I donate money to the World Wildlife Foundation?",
+        "How do I give money to the World Wildlife Foundation?",
+        "How do I donate money to the World Wildlife Foundation?",
         "How can I give money to WFF?",
         "How can I donate money to WFF?",
-	"How do I give money to WFF?",
-	"How do I donate money to WFF?",
+        "How do I give money to WFF?",
+        "How do I donate money to WFF?",
+        "How do I give money to WFF?",
+        "How do I donate money to WFF?",
         "Where can I give money?",
         "Where can I donate money?",
-	"Where do I give money?",
-	"Where do I donate money?",
-        "Where can I give money to the World Wildlife Fund?",
-        "Where can I donate money to the World Wildlife Fund?",
-	"Where do I give money to the World Wildlife Fund?",
-	"Where do I donate money to the World Wildlife Fund?",
+        "Where do I give money?",
+        "Where do I donate money?",
+        "Where can I give money to the World Wildlife Foundation?",
+        "Where can I donate money to the World Wildlife Foundation?",
+        "Where do I give money to the World Wildlife Foundation?",
+        "Where do I donate money to the World Wildlife Foundation?",
         "Where can I give money to WFF?",
         "Where can I donate money to WFF?",
-	"Where do I give money to WFF?",
-	"Where do I donate money to WFF?"
+        "Where do I give money to WFF?",
+        "Where do I donate money to WFF?"
       ],
       "responses": [
         "You can donate money via WFF's website at https://www.worldwildlife.org/"
-      ]
-    },
-    {
-      "tag": "WhatIsWFF",
-      "patterns": [
-        "What is the World Wildlife Fund?",
-        "Who is the World Wildlife Fund?",
-        "What does the World Wildlife Fund do?",
-        "Tell me more about the World Wildlife Fund?",
-        "World Wildlife Fund?",
-        "the World Wildlife Fund?"
-      ],
-      "responses": [
-        "The World Wildlife Fund (WFF) is a charitable organization whose been around for more than 60 years and works in nearly 100 countries. They work to protect and stores species natural habitats to ensure endangered species can thrive and grow. Efforts are made in collaboration with government to implement good policies."
       ]
     },
     {
@@ -487,7 +477,9 @@
         "That's forever"
       ],
       "responses": [
-        "I know. It is a very long time. It is hard to believe."
+        "I know. It is a very long time. It is hard to believe.",
+		"That's nothing compared to some other animals!",
+		"I know, it's really something compared to us humans."
       ]
     },
     {
