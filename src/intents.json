@@ -430,8 +430,7 @@
         "How can I help the orangutans?"
       ],
       "responses": [
-        "There are many charitable organizations who accept donations that help endangered animals like the World Wildlife Foundation (WFF).",
-        "First and foremost, you should educate yourself about endangered species and help."
+        "There are many charitable organizations who accept donations that help endangered animals like the World Wildlife Foundation (WFF)."
       ]
     },
     {
@@ -439,30 +438,28 @@
       "patterns": [
         "How can I give money?",
         "How can I donate money?",
-        "How do I give money?",
-        "How do I donate money?",
+	"How do I give money?",
+	"How do I donate money?",
         "How can I give money to the World Wildlife Foundation?",
         "How can I donate money to the World Wildlife Foundation?",
-        "How do I give money to the World Wildlife Foundation?",
-        "How do I donate money to the World Wildlife Foundation?",
+	"How do I give money to the World Wildlife Foundation?",
+	"How do I donate money to the World Wildlife Foundation?",
         "How can I give money to WFF?",
         "How can I donate money to WFF?",
-        "How do I give money to WFF?",
-        "How do I donate money to WFF?",
-        "How do I give money to WFF?",
-        "How do I donate money to WFF?",
+	"How do I give money to WFF?",
+	"How do I donate money to WFF?",
         "Where can I give money?",
         "Where can I donate money?",
-        "Where do I give money?",
-        "Where do I donate money?",
+	"Where do I give money?",
+	"Where do I donate money?",
         "Where can I give money to the World Wildlife Foundation?",
         "Where can I donate money to the World Wildlife Foundation?",
-        "Where do I give money to the World Wildlife Foundation?",
-        "Where do I donate money to the World Wildlife Foundation?",
+	"Where do I give money to the World Wildlife Foundation?",
+	"Where do I donate money to the World Wildlife Foundation?",
         "Where can I give money to WFF?",
         "Where can I donate money to WFF?",
-        "Where do I give money to WFF?",
-        "Where do I donate money to WFF?"
+	"Where do I give money to WFF?",
+	"Where do I donate money to WFF?"
       ],
       "responses": [
         "You can donate money via WFF's website at https://www.worldwildlife.org/"
