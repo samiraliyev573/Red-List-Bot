@@ -42,7 +42,7 @@
       "responses": [
         "Happy to help!",
         "Any time!",
-        "My pleasure"
+        "My pleasure!"
       ]
     },
     {
@@ -66,6 +66,30 @@
       ],
       "responses": [
         "The Amur Leopard, Rhinos and Orangutans are all at risk of going extinct!"
+      ]
+    },
+    {
+      "tag": "whyEndangered",
+      "patterns": [
+        "Why do animals become endangered?",
+        "How do animals become endangered?",
+        "What causes animals to become endangered?",
+	"Why do animals go extinct?",
+	"Why do animals become extinct?",
+        "How do animals become extinct?",
+	"How do animals go extinct?",
+        "What causes animals to become extinct?",
+        "What causes animals to go extinct?",
+	"Why are animals going extinct?",
+	"Why are animals becoming endangered?",
+	"Why are Rhinos endangered?",
+	"Why are Rhinoceros endangered?",
+	"Why are Leopards endangered?",
+	"Why are Amur Leopards endangered?",
+	"Why are Orangutans endangered?"
+      ],
+      "responses": [
+        "There are a number of reasons animals may go extinct or become endangered. It can be the destruction of their habitat for human development, changes due to global warming, imbalance in the number of predators hunting them and other factors or lack of food supply."
       ]
     },
     {
@@ -493,7 +517,7 @@
       "responses": [
         "I know. It is a very long time. It is hard to believe.",
 	"That's nothing compared to some other animals!",
-	"I know, it's really something compared to us humans."
+	"I know. It's really something compared to us humans."
       ]
     },
     {
