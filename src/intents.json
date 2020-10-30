@@ -242,7 +242,7 @@
         "They live to be about 35-45 years old!"
       ]
     },
-{
+    {
       "tag": "OrangutanSize",
       "patterns": [
         "How big is an Orangutan?",
@@ -346,7 +346,27 @@
         "Amur Leopards are very fast! They can run 37 miles per hour!",
         "Be careful around Amur Leopards! They can jump 19 feet horizontally and 10 feet vertically!",
         "Sadly, there are only 16 to 26 Amur Leopards left in the wild...",
-	"In the wild, an Amur leopard, lives about as long as a housecat. 10 to 15 years!"
+	"In the wild, an Amur leopard, lives about as long as a housecat. 10 to 15 years!",
+	"It only takes 3 months for a Female Amur Leopard to have a baby!",
+	"Male Amur Leopards are between 1.1 to 1.4m long and weigh up to 48 kg!",
+	"Female Amur Leopards are shorter than males. They are between 0.7m and 1.1m long and weigh up to 42 kg!"
+      ]
+    },
+    {
+      "tag": "LeopardSize",
+      "patterns": [
+        "How big is a Leopard?",
+        "How big are Leopards?",
+        "How large is a Leopard?",
+        "How large are Leopards?",
+        "How big is an Amur Leopard?",
+        "How big are Amur Leopards?",
+        "How large is an Amur Leopard?",
+        "How large are Amur Leopards?"
+      ],
+      "responses": [
+        "Male Amur Leopards are between 1.1 to 1.4m long and weigh up to 48 kg!",
+	"Female Amur Leopards are shorter than males. They are between 0.7m and 1.1m long and weigh up to 42 kg!"
       ]
     },
     {
