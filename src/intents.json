@@ -5,9 +5,10 @@
       "patterns": [
         "Hi",
         "Hey",
-        "How are you",
+        "How are you?",
         "Is anyone there?",
         "Hello",
+	"Greetings and Salutations",
         "Good day"
       ],
       "responses": [
@@ -239,6 +240,59 @@
 	"The armspan of an Orangutan is 8 feet from finger tip to finger tip!",
 	"Think we are the only ones with opposable thumbs? No! Orangutans have opposable thumbs too!",
         "They live to be about 35-45 years old!"
+      ]
+    },
+{
+      "tag": "OrangutanSize",
+      "patterns": [
+        "How big is an Orangutan?",
+        "How big are Orangutans?",
+        "How large is an Orangutan?",
+        "How large are Orangutans?"
+      ],
+      "responses": [
+        "Adult Orangutan weigh up to 300 pounds and are 1.4m tall!"
+      ]
+    },
+    {
+      "tag": "OrangutanLifespan",
+      "patterns": [
+        "How long does an Orangutan live?",
+        "How long do Orangutans live?",
+        "What is the lifespan of an Orangutan?",
+        "What is the lifespan of Orangutans?",
+        "What is an Orangutan's lifespan?",
+        "What are Orangutans' lifespans?",
+        "In the wild, how long does an Orangutan live?",
+        "In the wild, how long do Orangutans live?"
+      ],
+      "responses": [
+        "Orangutans live up to be 35-45 years old in the wild!"
+      ]
+    },
+    {
+      "tag": "OrangutanSpeed",
+      "patterns": [
+        "How fast is an Orangutan?",
+        "How fast are Orangutans?",
+        "How quick is an Orangutan?",
+        "How quick are Orangutans?",
+        "How quickly can an Orangutan move?",
+        "How quickly can Orangutans move?"
+      ],
+      "responses": [
+        "On the ground, Orangutan are quite slow as they use their long arms to push themselves forward and fall onto their feet. In trees though! Boy are they fast!"
+      ]
+    },
+    {
+      "tag": "OrangutanLeft",
+      "patterns": [
+        "How many Orangutans remain?",
+        "How many Orangutans are left?",
+        "How close are Orangutans to going extinct?"
+      ],
+      "responses": [
+        "Some sub-species like the Sumatran Orangutan are critically endangered with just 7,500 left! Overall, there are 104,700 worldwide."
       ]
     },
     {
