@@ -6,10 +6,13 @@ Red List bot that informs you about endangered species
 # How to run chatbot
 
 1. Clone the repository from github
+https://github.com/samiraliyev573/Red-List-Bot
 
 2. Have python installed (python 3.6+ )
+https://www.python.org/downloads/
 
 3. Have anaconda installed. (In windows when downloading anaconda, check the box that says add anaconda to path environment variables.)
+Install anaconda here: https://docs.conda.io/projects/conda/en/latest/user-guide/install/
 
 4. Now we create anaconda environment so whatever we do will be outside our system and wont do any harm to our currently installed packages. Type 'conda create -n projenv python=3.8' (if this command doesnt work, update your conda by typing 'conda update conda')
 
