@@ -19,19 +19,6 @@
       ]
     },
     {
-      "tag": "whatIsEndangered",
-      "patterns": [
-        "What is an endangered species?",
-        "What are endangered species?",
-        "What does it mean for an animal to be endangered?",
-        "What does it mean for a species to be endangered?"
-      ],
-      "responses": [
-        "Endangered species are animals, mammals, birds and even fish in danger of extinction!",
-        "Endangered species are forms of life near extinction!"
-      ]
-    },
-    {
       "tag": "goodbye",
       "patterns": [
         "Bye",
@@ -59,60 +46,15 @@
       ]
     },
     {
-      "tag": "question",
+      "tag": "whatIsAnEndangeredSpecies",
       "patterns": [
-        "What can you do for me? ",
-        "What are you capable of?",
-        "What are you good at?"
+        "What is an endangered species?",
+        "What are endangered species?",
+        "What does it mean for a species to be endangered?"
       ],
       "responses": [
-        "I know about every endangered species on this planet. Some of them need your help",
-        "I am good at tracking endangered species, see what happened to them and how to protect them"
-      ]
-    },
-    {
-      "tag": "about",
-      "patterns": [
-        "What is RedList?",
-        "What is Red List?"
-      ],
-      "responses": [
-        "Red list is about endangered species",
-        "World's most comprehensive inventory of the global conservation status of biological species"
-      ]
-    },
-    {
-      "tag": "animals",
-      "patterns": [
-        "Which animals are in red list?",
-        "What animals are extinct?"
-      ],
-      "responses": [
-        "There are many animals in RedList. Those include but not limited to Verreaux's Sifaka, Madame Berthe's Mouse Lemur",
-        "Some of the extinct animals: Pinta giant tortoise, Golden Toad"
-      ]
-    },
-    {
-      "tag": "plants",
-      "patterns": [
-        "What plants are in RedList?",
-        "What plants are about to extinct?"
-      ],
-      "responses": [
-        "Arctic plant, Brazil Plant, Bryophyte and many more",
-        "Caucasian Plant, Colombian Plant, Conifer and many more"
-      ]
-    },
-    {
-      "tag": "sad",
-      "patterns": [
-        "I feel sorry",
-        "I am very sad",
-        ""
-      ],
-      "responses": [
-        "I feel the same",
-        "Sad to see humans being ignorant of nature"
+        "Endangered species are animals, mammals, birds and even fish in danger of extinction!",
+        "Endangered species are forms of life near extinction!"
       ]
     },
     {
@@ -139,6 +81,58 @@
         "Rhinos are one such animal.",
         "Orangutans are endangered. They risk going extinct.",
         "Amur Leopard is in danger of going extinct! It has beautiful fur!"
+      ]
+    },
+    {
+      "tag": "question",
+      "patterns": [
+        "What can you do for me? ",
+        "What are you capable of?",
+        "What are you good at?"
+      ],
+      "responses": [
+        "I have been programmed with information about some endangered species on this planet. Many of them need your help! My purpose is to teach you facts about them and how you can help them."
+      ]
+    },
+    {
+      "tag": "about",
+      "patterns": [
+        "What is RedList?",
+        "What is Red List?"
+      ],
+      "responses": [
+        "Red list is a list of animals who are endangered species and near extinction.",
+        "World's most comprehensive inventory of the global conservation status of biological species"
+      ]
+    },
+    {
+      "tag": "animalsInRedList",
+      "patterns": [
+        "Which animals are in red list?"
+      ],
+      "responses": [
+        "There are many animals in RedList. Those include but not limited to Verreaux's Sifaka, Madame Berthe's Mouse Lemur. However, I only know about a few animals well."
+      ]
+    },
+    {
+      "tag": "animalsExtinct",
+      "patterns": [
+        "What animals are extinct?"
+      ],
+      "responses": [
+        "Some of the extinct animals: Pinta giant tortoise, Golden Toad. You can help prevent more animals from going extinct. Ask me about what animals are endangered to learn more."
+      ]
+    },
+    {
+      "tag": "sad",
+      "patterns": [
+        "I feel sorry",
+        "I am very sad",
+        ""
+      ],
+      "responses": [
+        "I feel the same",
+        "Sad to see humans being ignorant of nature"
       ]
     },
     {
@@ -419,6 +413,44 @@
       ],
       "responses": [
         "Sadly, there are only 16 to 26 Amur Leopards left in the wild..."
+      ]
+    },
+    {
+      "tag": "HowCanIHelp",
+      "patterns": [
+        "What can I do to help endangered species?",
+        "What can I do to help endangered animals?",
+        "How can I help endangered species?",
+        "How can I help endangered animals?",
+        "How can I help the rhinos?",
+        "How can I help the leopards?",
+        "How can I help the Rhinoceros?",
+        "How can I help the Amur Leopards?",
+        "How can I help the orangutan?",
+        "How can I help the orangutans?"
+      ],
+      "responses": [
+        "There are many charitable organizations who accept donations that help endangered animals like the World Wildlife Foundation (WFF)."
+      ]
+    },
+    {
+      "tag": "HowCanIDonate",
+      "patterns": [
+        "How can I give money?",
+        "How can I donate money?",
+	"How do I give money?",
+	"How do I donate money?",
+        "How can I give money to the World Wildlife Foundation?",
+        "How can I donate money to the World Wildlife Foundation?",
+	"How do I give money to the World Wildlife Foundation?",
+	"How do I donate money to the World Wildlife Foundation?",
+        "How can I give money to WFF?",
+        "How can I donate money to WFF?",
+	"How do I give money to WFF?",
+	"How do I donate money to WFF?"
+      ],
+      "responses": [
+        "You can donate money via WFF's website at https://www.worldwildlife.org/"
       ]
     },
     {
