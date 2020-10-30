@@ -127,8 +127,7 @@
       "tag": "sad",
       "patterns": [
         "I feel sorry",
-        "I am very sad",
-        ""
+        "I am very sad"
       ],
       "responses": [
         "I feel the same",
