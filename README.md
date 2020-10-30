@@ -29,7 +29,7 @@ Enjoy the ChatBot ;)
 # About the ChatBot
 
 This chat bot uses nltk packages and uses Natural Language Processing. All of the code necessary to run it can be found in src folder. Source folder has 6 files.
-  * nltyproperties.py file basically designed to tokenize, stem and put them in bag of words. Tokenizing will put the string into the words, punctiation and numbers.
+  * nltkproperties.py file basically designed to tokenize, stem and put them in bag of words. Tokenizing will put the string into the words, punctiation and numbers.
   Example: "How are you will" be changed into "How", "are", "you". Stemming will seperate roots from the actual word. Example: universe and university will be    turned into univers. bag_of_words method will create array that is 0 if the sentence has specific word in it or make it 1 if it has that specific work. Purpose of this is to generate aray of 1s and 0s then use it for training our model.
   * model.py file is about creating Neural Network for out data. It will create three linear layers, which are input layer, hidden layer and the output layer. 
   * train.py class is for training the model. Note: If github clone you have downloaded already has data.pth file, you may straight away run chat.py file. It will load contents of intents.json into the intents var. From there, it will use list of which words to ignore and then use stemming and tokenization methods from nlty-utils class. After that, it will sort them all uniquely into the set and start the training model. Once the model is done, it will save it in data.pth so chat.py can use it for chatting with the user. 
