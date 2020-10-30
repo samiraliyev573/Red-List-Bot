@@ -8,7 +8,7 @@
         "How are you?",
         "Is anyone there?",
         "Hello",
-	"Greetings and Salutations",
+        "Greetings and Salutations",
         "Good day"
       ],
       "responses": [
@@ -236,9 +236,9 @@
         "Orangutans can climb trees!",
         "Orangutans are vegetarians.",
         "A female Orangutans needs 8 years between births!",
-	"Adult Orangutan males can weigh up to 300 pounds!",
-	"The armspan of an Orangutan is 8 feet from finger tip to finger tip!",
-	"Think we are the only ones with opposable thumbs? No! Orangutans have opposable thumbs too!",
+        "Adult Orangutan males can weigh up to 300 pounds!",
+        "The armspan of an Orangutan is 8 feet from finger tip to finger tip!",
+        "Think we are the only ones with opposable thumbs? No! Orangutans have opposable thumbs too!",
         "They live to be about 35-45 years old!"
       ]
     },
@@ -346,10 +346,10 @@
         "Amur Leopards are very fast! They can run 37 miles per hour!",
         "Be careful around Amur Leopards! They can jump 19 feet horizontally and 10 feet vertically!",
         "Sadly, there are only 16 to 26 Amur Leopards left in the wild...",
-	"In the wild, an Amur leopard, lives about as long as a housecat. 10 to 15 years!",
-	"It only takes 3 months for a Female Amur Leopard to have a baby!",
-	"Male Amur Leopards are between 1.1 to 1.4m long and weigh up to 48 kg!",
-	"Female Amur Leopards are shorter than males. They are between 0.7m and 1.1m long and weigh up to 42 kg!"
+        "In the wild, an Amur leopard, lives about as long as a housecat. 10 to 15 years!",
+        "It only takes 3 months for a Female Amur Leopard to have a baby!",
+        "Male Amur Leopards are between 1.1 to 1.4m long and weigh up to 48 kg!",
+        "Female Amur Leopards are shorter than males. They are between 0.7m and 1.1m long and weigh up to 42 kg!"
       ]
     },
     {
@@ -366,7 +366,7 @@
       ],
       "responses": [
         "Male Amur Leopards are between 1.1 to 1.4m long and weigh up to 48 kg!",
-	"Female Amur Leopards are shorter than males. They are between 0.7m and 1.1m long and weigh up to 42 kg!"
+        "Female Amur Leopards are shorter than males. They are between 0.7m and 1.1m long and weigh up to 42 kg!"
       ]
     },
     {
@@ -442,7 +442,7 @@
       ],
       "responses": [
         "I know. It is a very cool fact.",
-	"Yes, it's pretty impressive, isn't it?"
+        "Yes, it's pretty impressive, isn't it?"
       ]
     },
     {
@@ -450,14 +450,14 @@
       "patterns": [
         "That's so fast!",
         "That's so quick!",
-	"That's fast!",
+        "That's fast!",
         "They move so fast!",
         "They move so quick!",
-	"I can't believe how fast they move!",
-	"I can't believe how quick they move!",
-	"I can't believe how quickly they move!",
-	"I can't believe how fast they are!",
-	"I can't believe how quick they are!"
+        "I can't believe how fast they move!",
+        "I can't believe how quick they move!",
+        "I can't believe how quickly they move!",
+        "I can't believe how fast they are!",
+        "I can't believe how quick they are!"
       ],
       "responses": [
         "I know. Creatures in the Animal Kingdom make us humans look so slow!"
@@ -468,16 +468,16 @@
       "patterns": [
         "That's so big!",
         "That's so large!",
-	"That's so huge!",
-	"That's so heavy!",
+        "That's so huge!",
+        "That's so heavy!",
         "That's big!",
         "That's large!",
-	"That's huge!",
-	"That's heavy!",
-	"I can't believe how big they are!",
-	"I can't believe how large they are!",
-	"I can't believe how much they weigh!",
-	"I can't believe how heavy they are!"
+        "That's huge!",
+        "That's heavy!",
+        "I can't believe how big they are!",
+        "I can't believe how large they are!",
+        "I can't believe how much they weigh!",
+        "I can't believe how heavy they are!"
       ],
       "responses": [
         "I know. When I first heard this fact, I could hardly believe the size of these creatures! They look so small on TV!"
@@ -509,7 +509,7 @@
       ],
       "responses": [
         "Haha. Nobody spins a web like Spiderman can!",
-	"The spiderman TV series from the 90s was the best one!"
+        "The spiderman TV series from the 90s was the best one!"
       ]
     }
   ]

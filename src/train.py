@@ -2,7 +2,7 @@
 import json
 import torch
 import torch.nn as nn
-from nltk_utils import tokenize, stem, bag_of_words
+from nltkproperties import tokenize, stem, bag_of_words
 import numpy as np
 from torch.utils.data import Dataset, DataLoader
 from model import NeuralNet
