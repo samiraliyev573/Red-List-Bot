@@ -430,7 +430,8 @@
         "How can I help the orangutans?"
       ],
       "responses": [
-        "There are many charitable organizations who accept donations that help endangered animals like the World Wildlife Foundation (WFF)."
+        "There are many charitable organizations who accept donations that help endangered animals like the World Wildlife Foundation (WFF).",
+        "First and foremost, you should educate yourself about endangered species and help "
       ]
     },
     {
@@ -438,16 +439,16 @@
       "patterns": [
         "How can I give money?",
         "How can I donate money?",
-	"How do I give money?",
-	"How do I donate money?",
+        "How do I give money?",
+        "How do I donate money?",
         "How can I give money to the World Wildlife Foundation?",
         "How can I donate money to the World Wildlife Foundation?",
-	"How do I give money to the World Wildlife Foundation?",
-	"How do I donate money to the World Wildlife Foundation?",
+        "How do I give money to the World Wildlife Foundation?",
+        "How do I donate money to the World Wildlife Foundation?",
         "How can I give money to WFF?",
         "How can I donate money to WFF?",
-	"How do I give money to WFF?",
-	"How do I donate money to WFF?"
+        "How do I give money to WFF?",
+        "How do I donate money to WFF?"
       ],
       "responses": [
         "You can donate money via WFF's website at https://www.worldwildlife.org/"
