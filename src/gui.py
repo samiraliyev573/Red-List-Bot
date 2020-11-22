@@ -14,23 +14,9 @@ class ChatInterface(Frame):
         Frame.__init__(self, master)
         self.master = master
 
-        #Menu: Create the menu
+        #Menu: Planning to add more features through this
         menu = Menu(self.master)
-        self.master.config(menu=menu, bd=4)
-
-
-        settings = Menu(menu, tearoff=0)
-        # add settings inside the menu on top of the screen
-        menu.add_cascade(label="Settings", menu=settings)
-
-        settings.add_command(label="Exit1",command=self.exitapp)
-        settings.add_command(label="Exit2",command=self.exitapp)
-        # add command for menu to exit and call exit app when user wants to exit
-        settings.add_command(label="Exit3",command=self.exitapp)
-    # for exiting the application
-    def exitapp(self):
-        exit() 
-
+        self.master.config(menu=menu, bd=5)
 
         # Creating chat wondow
         self.chat_window = Frame(self.master, bd=6)
@@ -46,7 +32,7 @@ class ChatInterface(Frame):
         self.scrollbar.pack(fill=Y, side=RIGHT)
 
 
-        
+
         # Text that is shown in the window
         self.text = Text(self.chat_window, yscrollcommand=self.scrollbar.set, state=DISABLED,
                              bd=1, padx=6, pady=6, spacing3=8, wrap=WORD, bg=None, font="Arial", 
@@ -67,7 +53,7 @@ class ChatInterface(Frame):
         self.input_field = Entry(self.frame_input, bd=1, justify=LEFT)
         # give it some parameters
         self.input_field.pack(fill=X, padx=6, pady=6, ipady=3)
-        
+
 
         # frame for button
         self.button_frame = Frame(self.master, bd=0)
@@ -93,13 +79,13 @@ class ChatInterface(Frame):
         usertext = "You : " + user_input + "\n"
 
         # insert the string 
-
         self.text.configure(state=NORMAL)
         self.text.insert(END, usertext)
         self.text.configure(state=DISABLED)
+
         # Make user to see end text. This means scrollbar will automatically scroll down
         self.text.see(END)
-        
+
         # get chatbotanswer fron chat function insde chat.py
         chatbotanswer=chat(user_input)
 
@@ -111,15 +97,12 @@ class ChatInterface(Frame):
 
         self.text.insert(END, answer)
         self.text.configure(state=DISABLED)
-        
+
         # Make user to see end text. This means scrollbar will automatically scroll down
         self.text.see(END)
 
         # clear the input field automatically so user doesnt delete everytime
         self.input_field.delete(0,END)
-
-
-
 
 # initializing gui as TK         
 gui=Tk()
