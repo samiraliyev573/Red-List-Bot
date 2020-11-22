@@ -5,6 +5,15 @@ from tkinter import *
 from chat import chat
 
 
+# importing threading to create another thread for the text-to speech functionality
+import threading
+
+# gtts is google text to speech library for concerting text to speech
+from gtts import gTTS
+
+# pygame has class called mixer that plays audio
+from pygame import mixer
+
 
 
 # main interface for the gui
@@ -17,10 +26,11 @@ class ChatInterface(Frame):
         #Menu: Planning to add more features through this
         menu = Menu(self.master)
         self.master.config(menu=menu, bd=5)
-        file = Menu(menu, tearoff=0)
-        menu.add_cascade(label="File", menu=file)
-        file.add_command(label="Exit",command=self.chatexit)
-        file.add_command(label="Clear Chat", command=self.clear_chat)
+        
+        top_menu = Menu(menu, tearoff=0)
+        menu.add_cascade(label="File", menu=top_menu)
+        top_menu.add_command(label="Exit",command=self.exit_app)
+        top_menu.add_command(label="Clear Chat", command=self.chat_clean)
 
 
 
@@ -77,15 +87,36 @@ class ChatInterface(Frame):
         # bind the main function to get_output
         self.master.bind("<Return>", self.get_output)
 
-    def clear_chat(self):
+    # method for clearing chat
+    def chat_clean(self):
+
+        # clear all the text inside text widget
         self.text.config(state=NORMAL)
         self.text.delete(1.0, END)
         self.text.delete(1.0, END)
         self.text.config(state=DISABLED)
     
-    def chatexit(self):
+    # for quittng the chat
+    def exit_app(self):
         exit() 
 
+
+    # function for playing sound
+    def playSound(self,answer):
+        # initialize google text to speech in the 
+        tts = gTTS(answer)
+        # save the audio file of the response inside audio.mp3 
+        tts.save('audio.mp3')
+
+        # initialize mixer
+        mixer.init()
+
+        # load the saved audio
+        mixer.music.load('audio.mp3')
+
+        # play the saved audio
+        mixer.music.play()
+ 
     # function for sending user message to chatbot and receiving the answer.
     def get_output(self, message):
 
@@ -120,6 +151,12 @@ class ChatInterface(Frame):
 
         # clear the input field automatically so user doesnt delete everytime
         self.input_field.delete(0,END)
+
+       
+        # create thread for voice and call playSound function
+        voiceThread = threading.Thread(target=self.playSound, args=(chatbotanswer,))
+        # start the voicethread
+        voiceThread.start() 
 
 # initializing gui as TK         
 gui=Tk()
