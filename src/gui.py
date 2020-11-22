@@ -192,6 +192,6 @@ gui.geometry("400x600")
 # title for GUI
 gui.title("RedList-Bot")
 
-
+gui.iconbitmap('redlist.png')
 # starting the  main loop
 gui.mainloop()
