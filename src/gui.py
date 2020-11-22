@@ -114,7 +114,7 @@ class ChatInterface(Frame):
 
     # function for playing sound
     def playSound(self,answer):
-        audio_name = 'audio.wav'
+        audio_name = 'audio.mp3'
         
         # initialize google text to speech
         tts = gTTS(answer)
