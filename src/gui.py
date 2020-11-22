@@ -14,9 +14,23 @@ class ChatInterface(Frame):
         Frame.__init__(self, master)
         self.master = master
 
-        #Menu: Planning to add more features through this
+        #Menu: Create the menu
         menu = Menu(self.master)
-        self.master.config(menu=menu, bd=5)
+        self.master.config(menu=menu, bd=4)
+
+
+        settings = Menu(menu, tearoff=0)
+        # add settings inside the menu on top of the screen
+        menu.add_cascade(label="Settings", menu=settings)
+
+        settings.add_command(label="Exit1",command=self.exitapp)
+        settings.add_command(label="Exit2",command=self.exitapp)
+        # add command for menu to exit and call exit app when user wants to exit
+        settings.add_command(label="Exit3",command=self.exitapp)
+    # for exiting the application
+    def exitapp(self):
+        exit() 
+
 
         # Creating chat wondow
         self.chat_window = Frame(self.master, bd=6)
@@ -79,9 +93,10 @@ class ChatInterface(Frame):
         usertext = "You : " + user_input + "\n"
 
         # insert the string 
-        #self.text.configure(state=NORMAL)
+
+        self.text.configure(state=NORMAL)
         self.text.insert(END, usertext)
-        #self.text.configure(state=DISABLED)
+        self.text.configure(state=DISABLED)
         # Make user to see end text. This means scrollbar will automatically scroll down
         self.text.see(END)
         
@@ -92,16 +107,19 @@ class ChatInterface(Frame):
         answer="Red-List Bot : " + chatbotanswer + "\n"
 
         # insert the string 
-        #self.text.configure(state=NORMAL)
+        self.text.configure(state=NORMAL)
 
         self.text.insert(END, answer)
-        #self.text.configure(state=DISABLED)
-
+        self.text.configure(state=DISABLED)
+        
         # Make user to see end text. This means scrollbar will automatically scroll down
         self.text.see(END)
 
         # clear the input field automatically so user doesnt delete everytime
         self.input_field.delete(0,END)
+
+
+
 
 # initializing gui as TK         
 gui=Tk()
