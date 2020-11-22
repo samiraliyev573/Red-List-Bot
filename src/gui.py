@@ -11,11 +11,19 @@ import threading
 # gtts is google text to speech library for concerting text to speech
 from gtts import gTTS
 
+# pygame has class called mixer that plays audio
+# for mac os
+from pygame import mixer
+
 # importing os for os related commands
 import os
 
 # importing library to play sound
+# for windows
 import playsound
+
+# importing to differentiate between mac and windows
+from sys import platform
 
 
 
@@ -106,17 +114,29 @@ class ChatInterface(Frame):
 
     # function for playing sound
     def playSound(self,answer):
+        audio_name = 'audio.wav'
+        
         # initialize google text to speech
         tts = gTTS(answer)
-
+        
         # save the audio file of the response inside audio.mp3 
-        tts.save('audio.mp3')
+        tts.save(audio_name)
 
-        # play the audio file that google text to speech saved
-        playsound.playsound('audio.mp3')
+        if platform == "darwin":
+             # initialize mixer
+            mixer.init()
+
+            # load the saved audio
+            mixer.music.load(audio_name)
+
+            # play the saved audio
+            mixer.music.play()
+        else:
+            # play the audio file that google text to speech saved
+            playsound.playsound(audio_name)
 
         # remove the audio file after playing it
-        os.remove("audio.mp3")
+        os.remove(audio_name)
 
  
     # function for sending user message to chatbot and receiving the answer.
