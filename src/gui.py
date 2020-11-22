@@ -17,6 +17,15 @@ class ChatInterface(Frame):
         #Menu: Planning to add more features through this
         menu = Menu(self.master)
         self.master.config(menu=menu, bd=5)
+        file = Menu(menu, tearoff=0)
+        menu.add_cascade(label="File", menu=file)
+        file.add_command(label="Exit",command=self.chatexit)
+        file.add_command(label="Clear Chat", command=self.clear_chat)
+
+
+
+
+
 
         # Creating chat wondow
         self.chat_window = Frame(self.master, bd=6)
@@ -68,6 +77,14 @@ class ChatInterface(Frame):
         # bind the main function to get_output
         self.master.bind("<Return>", self.get_output)
 
+    def clear_chat(self):
+        self.text.config(state=NORMAL)
+        self.text.delete(1.0, END)
+        self.text.delete(1.0, END)
+        self.text.config(state=DISABLED)
+    
+    def chatexit(self):
+        exit() 
 
     # function for sending user message to chatbot and receiving the answer.
     def get_output(self, message):
