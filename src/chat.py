@@ -27,12 +27,11 @@ model.load_state_dict(model_state)
 model.eval()
 
 bot_name = "Red List Bot"
-print("Let's chat! type 'quit' to exit")
-while True:
-    sentence = input('You: ')
-    if sentence == 'quit':
-        break
 
+# Made the commented code into a function so gui.py can ask and this function can return
+def chat(sentence):
+    if sentence == 'quit':
+        return "Quit has been asked"
     sentence = tokenize(sentence)
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
@@ -45,10 +44,39 @@ while True:
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
 
-    if prob.item() > 0.75:
+    if prob.item() > 0.95:
 
         for intent in intents["intents"]:
             if tag == intent["tag"]:
-                print(f"{bot_name}: {random.choice(intent['responses'])}")
+                return random.choice(intent['responses'])
     else:
-        print(f"{bot_name}: I do not understand...")
+        return "I do not understand"
+        
+
+
+
+#print("Let's chat! type 'quit' to exit")
+#while True:
+#    sentence = input('You: ')
+#    if sentence == 'quit':
+#        break
+#
+#    sentence = tokenize(sentence)
+#    X = bag_of_words(sentence, all_words)
+#    X = X.reshape(1, X.shape[0])
+#    X = torch.from_numpy(X).to(device)
+#
+#    output = model(X)
+#    _, predicted = torch.max(output, dim=1)
+#    tag = tags[predicted.item()]
+#    # check if the probability of this tag is high enough
+#    probs = torch.softmax(output, dim=1)
+#    prob = probs[0][predicted.item()]
+
+#    if prob.item() > 0.75:
+
+#        for intent in intents["intents"]:
+#            if tag == intent["tag"]:
+#                print(f"{bot_name}: {random.choice(intent['responses'])}")
+#    else:
+#        print(f"{bot_name}: I do not understand...")
