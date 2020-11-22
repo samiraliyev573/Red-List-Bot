@@ -14,7 +14,11 @@ from gtts import gTTS
 # pygame has class called mixer that plays audio
 from pygame import mixer
 
+# importing os for os related commands
 import os
+
+# importing library to play sound
+import playsound
 
 
 
@@ -105,20 +109,16 @@ class ChatInterface(Frame):
 
     # function for playing sound
     def playSound(self,answer):
-        # initialize google text to speech in the 
+        # initialize google text to speech
         tts = gTTS(answer)
+        
         # save the audio file of the response inside audio.mp3 
         tts.save('audio.mp3')
 
-        # initialize mixer
-        mixer.init()
+        # play the audio file that google text to speech saved
+        playsound.playsound('audio.mp3')
 
-        # load the saved audio
-        mixer.music.load('audio.mp3')
-
-        # play the saved audio
-        mixer.music.play()
-
+        # remove the audio file after playing it
         os.remove("audio.mp3")
 
  
