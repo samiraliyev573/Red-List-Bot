@@ -14,6 +14,8 @@ from gtts import gTTS
 # pygame has class called mixer that plays audio
 from pygame import mixer
 
+import os
+
 
 
 # main interface for the gui
@@ -116,6 +118,9 @@ class ChatInterface(Frame):
 
         # play the saved audio
         mixer.music.play()
+
+        os.remove("audio.mp3")
+
  
     # function for sending user message to chatbot and receiving the answer.
     def get_output(self, message):
