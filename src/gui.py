@@ -11,9 +11,6 @@ import threading
 # gtts is google text to speech library for concerting text to speech
 from gtts import gTTS
 
-# pygame has class called mixer that plays audio
-from pygame import mixer
-
 # importing os for os related commands
 import os
 
@@ -111,7 +108,7 @@ class ChatInterface(Frame):
     def playSound(self,answer):
         # initialize google text to speech
         tts = gTTS(answer)
-        
+
         # save the audio file of the response inside audio.mp3 
         tts.save('audio.mp3')
 
