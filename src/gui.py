@@ -193,7 +193,7 @@ gui.geometry("400x600")
 gui.title("RedList-Bot")
 
 # Mouse animal icon by Icons8
-gui.iconbitmap('redlist_logo.ico')
+
 photo = PhotoImage(file = "redlist_logo.png")
 gui.iconphoto(False, photo)
 
