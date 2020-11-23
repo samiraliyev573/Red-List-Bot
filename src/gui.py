@@ -42,7 +42,12 @@ class ChatInterface(Frame):
         menu.add_cascade(label="File", menu=top_menu)
         top_menu.add_command(label="Exit",command=self.exit_app)
         top_menu.add_command(label="Clear Chat", command=self.chat_clean)
-
+        
+        themes = Menu(top_menu, tearoff=0)
+        top_menu.add_cascade(label= "Theme", menu = themes)
+        themes.add_command(label = "Dark Theme")
+        themes.add_command(label = "Light Theme")
+        
 
 
 
