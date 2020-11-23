@@ -1,6 +1,11 @@
 # tkinter package for making gui and graphical interface
 from tkinter import *
 
+# messagebox method inside tkinter
+import tkinter.messagebox
+
+
+
 # importing chat method that has new chat function that returns trained data's answer
 from chat import chat
 
@@ -39,17 +44,12 @@ class ChatInterface(Frame):
         self.master.config(menu=menu, bd=5)
         
         top_menu = Menu(menu, tearoff=0)
-        menu.add_cascade(label="File", menu=top_menu)
-        top_menu.add_command(label="Exit",command=self.exit_app)
+        menu.add_cascade(label="Settings", menu=top_menu)
+        top_menu.add_command(label="About us", command=self.project_about)
+        
         top_menu.add_command(label="Clear Chat", command=self.chat_clean)
+        top_menu.add_command(label="Exit",command=self.exit_app)
         
-        themes = Menu(top_menu, tearoff=0)
-        top_menu.add_cascade(label= "Theme", menu = themes)
-        themes.add_command(label = "Dark Theme")
-        themes.add_command(label = "Light Theme")
-        
-
-
 
 
 
@@ -115,6 +115,10 @@ class ChatInterface(Frame):
     # for quittng the chat
     def exit_app(self):
         exit() 
+
+    def project_about(self):
+        tkinter.messagebox.showinfo(title="COSC 310 Project Group 1:", message= "Samir Aliyev - Lead Developer\nWesley Burchnall - Project Manager\nMichael Bartinski - Documentation\n Maruf Zubery- Documentation \n Daniel Inglot - Presentation\n")
+
 
 
     # function for playing sound
