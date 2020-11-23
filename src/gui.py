@@ -39,15 +39,21 @@ class ChatInterface(Frame):
         Frame.__init__(self, master)
         self.master = master
 
-        #Menu: Planning to add more features through this
+        #Menu: 
         menu = Menu(self.master)
         self.master.config(menu=menu, bd=5)
         
         top_menu = Menu(menu, tearoff=0)
+        # top menu which is settings has 3 properties
         menu.add_cascade(label="Settings", menu=top_menu)
+
+        # first property is about us shows that the project is made by students in this course
         top_menu.add_command(label="About us", command=self.project_about)
         
+        # second property is clear chat which clears the chat
         top_menu.add_command(label="Clear Chat", command=self.chat_clean)
+
+        # third property is exit app. Dont know exactly why but seemed like a feature to implement since a lot of apps have this button.
         top_menu.add_command(label="Exit",command=self.exit_app)
         
 
@@ -69,15 +75,15 @@ class ChatInterface(Frame):
 
 
         # Text that is shown in the window
-        self.text = Text(self.chat_window, yscrollcommand=self.scrollbar.set, state=DISABLED,
+        self.text_list = Text(self.chat_window, yscrollcommand=self.scrollbar.set, state=DISABLED,
                              bd=1, padx=6, pady=6, spacing3=8, wrap=WORD, bg=None, font="Arial", 
                              width=10, height=1)
 
         # make it expand and fill both sides if necessary
-        self.text.pack(expand=True, fill=BOTH)
+        self.text_list.pack(expand=True, fill=BOTH)
 
         # adding this makes scrolling active and follows text in vertical direction
-        self.scrollbar.config(command=self.text.yview)
+        self.scrollbar.config(command=self.text_list.yview)
 
         # Frame for user input
         self.frame_input = Frame(self.master, bd=1)
@@ -107,15 +113,16 @@ class ChatInterface(Frame):
     def chat_clean(self):
 
         # clear all the text inside text widget
-        self.text.config(state=NORMAL)
-        self.text.delete(1.0, END)
-        self.text.delete(1.0, END)
-        self.text.config(state=DISABLED)
+        self.text_list.config(state=NORMAL)
+        self.text_list.delete(1.0, END)
+        self.text_list.delete(1.0, END)
+        self.text_list.config(state=DISABLED)
     
     # for quittng the chat
     def exit_app(self):
         exit() 
-
+    
+    # for displaying about us info for the user inside the message box
     def project_about(self):
         tkinter.messagebox.showinfo(title="COSC 310 Project Group 1:", message= "Samir Aliyev - Lead Developer\nWesley Burchnall - Project Manager\nMichael Bartinski - Documentation\n Maruf Zubery- Documentation \n Daniel Inglot - Presentation\n")
 
@@ -158,12 +165,12 @@ class ChatInterface(Frame):
         usertext = "You : " + user_input + "\n"
 
         # insert the string 
-        self.text.configure(state=NORMAL)
-        self.text.insert(END, usertext)
-        self.text.configure(state=DISABLED)
+        self.text_list.configure(state=NORMAL)
+        self.text_list.insert(END, usertext)
+        self.text_list.configure(state=DISABLED)
 
         # Make user to see end text. This means scrollbar will automatically scroll down
-        self.text.see(END)
+        self.text_list.see(END)
 
         # get chatbotanswer fron chat function insde chat.py
         chatbotanswer=chat(user_input)
@@ -172,13 +179,13 @@ class ChatInterface(Frame):
         answer="Red-List Bot : " + chatbotanswer + "\n"
 
         # insert the string 
-        self.text.configure(state=NORMAL)
+        self.text_list.configure(state=NORMAL)
 
-        self.text.insert(END, answer)
-        self.text.configure(state=DISABLED)
+        self.text_list.insert(END, answer)
+        self.text_list.configure(state=DISABLED)
 
         # Make user to see end text. This means scrollbar will automatically scroll down
-        self.text.see(END)
+        self.text_list.see(END)
 
         # clear the input field automatically so user doesnt delete everytime
         self.input_field.delete(0,END)
@@ -209,3 +216,4 @@ gui.iconphoto(False, photo)
 
 # starting the  main loop
 gui.mainloop()
+
