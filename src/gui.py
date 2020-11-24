@@ -178,6 +178,7 @@ class ChatInterface(Frame):
         # string combining chatbot output and making it from Red-List bot's perspective
         answer="Red-List Bot : " + chatbotanswer + "\n"
 
+
         # insert the string 
         self.text_list.configure(state=NORMAL)
 
@@ -216,4 +217,3 @@ gui.iconphoto(False, photo)
 
 # starting the  main loop
 gui.mainloop()
-
