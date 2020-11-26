@@ -601,6 +601,19 @@
         "Haha. Nobody spins a web like Spiderman can!",
         "The spiderman TV series from the 90s was the best one!"
       ]
+    },
+    {
+      "tag": "Plants",
+      "patterns": [ 
+        "can you tell me about extinct plants?",
+        ""
+        
+      ],
+      "responses": [
+        "Haha. Nobody spins a web like Spiderman can!",
+        "The spiderman TV series from the 90s was the best one!"
+      ]
     }
   ]
+  
 }
