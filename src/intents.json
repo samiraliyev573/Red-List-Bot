@@ -154,8 +154,7 @@
       "tag": "sad",
       "patterns": [
         "I feel sorry",
-        "I am very sad",
-        ""
+        "I am very sad"
       ],
       "responses": [
         "I feel the same",
@@ -601,6 +600,68 @@
         "Haha. Nobody spins a web like Spiderman can!",
         "The spiderman TV series from the 90s was the best one!"
       ]
+    },
+    {
+      "tag": "Plants",
+      "patterns": [ 
+        "Can you tell me about endangered plants?"
+        
+      ],
+      "responses": [
+        "As of September 2016, the International Union for Conservation of Nature (IUCN) lists 3654 endangered plant species of which 2493 are critically endangered. The number of plants that have disappeared from the wild is more than twice the number of extinct birds, mammals and amphibians combined."
+      ]
+    },
+
+    {
+      "tag": "Which plants extinct",
+      "patterns": [ 
+        "Which plants have gone extinct in the last decade?",
+        "Which plants have gone extinct in the last 10 years"
+        
+      ],
+      "responses": [
+        "From 2010 to 2020, the following plants have gone extinct, Angraecopsis dolabriformis, Angraecum astroarche, Basananthe cupricola, Centaurea pseudoleucolepis, Cyanea eleeleensis, Cyanea linearifolia, Cyanea mauiensis, Cyanea minutiflora, Cyanea parvifolia, Cyanea sessilifolia, Cyperus rockii (Kaua’i flatsedge), Cyrtandra olona, Delissea sub cordata, Delissea undulata, Eulophia stenopetala, Euphrasia mendoncae, Fissidens microstictus, Habenaria petromedusa, Heliotropium pannifolium (St. Helena heliotrope), Hibiscadelphus woodii (Wood’s hau kuahiwi), Lepidium amissum (Waitakere scurvy grass), Lepidium obtusatum, Logania depressa, Melicope macropus (Kaholuamanu melicope),  "
+      ]
+
+    },
+
+    {
+      "tag": "how plants extinct",
+      "patterns": [ 
+        "Why are plants going extinct?",
+        "How are plants becoming endangerd?"
+        
+      ],
+      "responses": [
+      "The main cause of the extinctions is the destruction of natural habitats by human activities, such as cutting down forests and converting land into fields for farming. Roughly half of all reported plant extinctions occurred on isolated islands, where species are more vulnerable to environmental changes brought on by human activity.", 
+      "Deforestation, farming, mining and increasing land use for human activities is the cause behind plant extinction."
+      ]
+    },
+
+    {
+      "tag": "endangered plants",
+      "patterns": [ 
+        "What plants are endangered?"
+        
+      ],
+      "responses": [
+        "Many plants all over the world are endangered. If you like , I could tell about a list of plants that are endangered in different parts of the world. So tell me which region of the world's plants you would like to know about, North America, Africa, Asia, Europe or Austrailia?"
+      ]
+    },
+
+    {
+      "tag": "plants america",
+      "patterns": [ 
+        "Tell me about endangered plants in North America.",
+        "Plants in North America."
+        
+        
+      ],
+      "responses": [
+        "In North America, the ten most endangered plants are,  Western Prairie Fringed Orchid, Rafflesia Flower, Georgia Aster, Wiggin's Acalypha, Texas Wild Rice, Howell's Spectacular Thelypody, Stenogyne Kanehoana, Ouachita Mountain Goldenrod, Enrubio, Arizona Agave. Let me know if you want to know more information about any of the plants on the list."
+      ]
     }
+    
   ]
+  
 }
