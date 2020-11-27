@@ -30,6 +30,19 @@ def synonym_recognition(word):
     
     return synonyms
 
+def get_synonyms(word1):
+    synonymList1 = []
+    for data1 in word1:
+        wordnetSynset1 = wn.synsets(data1)
+        tempList1=[]
+        for synset1 in wordnetSynset1:
+            synLemmas = synset1.lemma_names()
+            for i in xrange(len(synLemmas)):
+                word = synLemmas[i].replace('_',' ')
+                if word not in tempList1:
+                    tempList1.append(word)
+        synonymList1.append(tempList1)
+    return synonymList1
 
 
 

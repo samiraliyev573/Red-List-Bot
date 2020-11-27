@@ -2,7 +2,7 @@ import random
 import json
 import torch
 from model import NeuralNet
-from nltkproperties import bag_of_words, tokenize
+from nltkproperties import bag_of_words, tokenize, synonym_recognition
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
@@ -35,11 +35,16 @@ def chat(sentence):
     sentence = tokenize(sentence)
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
+    
+    Y = synonym_recognition(sentence)
+    print(Y)
+    
     X = torch.from_numpy(X).to(device)
-
+    
     output = model(X)
     _, predicted = torch.max(output, dim=1)
     tag = tags[predicted.item()]
+    
     # check if the probability of this tag is high enough
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
