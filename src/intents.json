@@ -614,10 +614,10 @@
     },
 
     {
-      "tag": "Plants",
+      "tag": "Which plants extinct",
       "patterns": [ 
         "Which plants have gone extinct in the last decade?",
-        "Which plants have gone extinct in the last 10 years",
+        "Which plants have gone extinct in the last 10 years"
         
       ],
       "responses": [
@@ -627,7 +627,7 @@
     },
 
     {
-      "tag": "Plants",
+      "tag": "how plants extinct",
       "patterns": [ 
         "Why are plants going extinct?",
         "How are plants becoming endangerd?"
@@ -640,7 +640,7 @@
     },
 
     {
-      "tag": "Plants",
+      "tag": "endangered plants",
       "patterns": [ 
         "What plants are endangered?"
         
@@ -651,20 +651,17 @@
     },
 
     {
-      "tag": "Plants",
+      "tag": "plants america",
       "patterns": [ 
         "Tell me about endangered plants in North America.",
-        "Plants in North America.",
-        "North America."
+        "Plants in North America."
+        
         
       ],
       "responses": [
         "In North America, the ten most endangered plants are,  Western Prairie Fringed Orchid, Rafflesia Flower, Georgia Aster, Wiggin's Acalypha, Texas Wild Rice, Howell's Spectacular Thelypody, Stenogyne Kanehoana, Ouachita Mountain Goldenrod, Enrubio, Arizona Agave. Let me know if you want to know more information about any of the plants on the list."
       ]
-    },
-
-  
-
+    }
     
   ]
   
