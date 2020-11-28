@@ -660,7 +660,72 @@
       "responses": [
         "In North America, the ten most endangered plants are,  Western Prairie Fringed Orchid, Rafflesia Flower, Georgia Aster, Wiggin's Acalypha, Texas Wild Rice, Howell's Spectacular Thelypody, Stenogyne Kanehoana, Ouachita Mountain Goldenrod, Enrubio, Arizona Agave. Let me know if you want to know more information about any of the plants on the list."
       ]
+    },
+
+    {
+      "tag": "What is Climate Change",
+      "patterns": [ 
+        "Tell me about Climate Change.",
+        "Can you tell me about Climate Change?",
+        "What is Climate Change?",
+        "What is global warming?",
+        "Is climate change real?"
+        
+      ],
+      "responses": [
+        "Climate change, also called global warming, refers to the rise in average surface temperatures on Earth. An overwhelming scientific consensus maintains that climate change is due primarily to the human use of fossil fuels, which releases carbon dioxide and other greenhouse gases into the air. The gases trap heat within the atmosphere, which can have a range of effects on ecosystems, including rising sea levels, severe weather events, and droughts that render landscapes more susceptible to wildfires. If you want to know more, ask me about the effects, causes of climate change and the implications of a warming planet on life on earth.",
+
+        "Solar energy radiating back to space from the Earth's surface is absorbed by greenhouse gases and re-emitted in all directions.This heats both the lower atmosphere and the surface of the planet.Scientists believe we are adding to the natural greenhouse effect, with gases released from industry and agriculture trapping more energy and increasing the temperature. This is known as climate change or global warming. If you want to know more, ask me about the effects, causes of climate change and the implications of a warming planet on life on earth.",
+
+        "Climate change includes both the global warming driven by human emissions of greenhouse gases, and the resulting large-scale shifts in weather patterns. Though there have been previous periods of climatic change, since the mid-20th century the rate of human impact on Earth's climate system and the global scale of that impact have been unprecedented. If you want to know more, ask me about the effects, causes of climate change and the implications of a warming planet on life on earth."
+        
+      ]
+    },
+
+
+    {
+      "tag": "Causes of Climate Change ",
+      "patterns": [ 
+        "Why is the climate changing?",
+        "What is causing climate change?",
+        "What is the cause of climate change?",
+        "Causes of climate change"
+        
+      ],
+      "responses": [
+        "The primary cause of climate change is the burning of fossil fuels, such as oil and coal, which emits greenhouse gases into the atmosphere—primarily carbon dioxide. Other human activities, such as agriculture and deforestation, also contribute to the proliferation of greenhouse gases that cause climate change. If you would like to know more about what causes climate change, ask me how different economic sectors of our planet such as farming, transportation, energy production, etc contribute to climate change.",
+
+        "Human activity is the main cause of climate change. People burn fossil fuels and convert land from forests to agriculture. Since the beginning of the Industrial Revolution, people have burned more and more fossil fuels and changed vast areas of land from forests to farmland. If you would like to know more about what causes climate change, ask me how different economic sectors of our planet such as farming, transportation, energy production, etc contribute to climate change.",
+             
+        "Humans are increasingly influencing the climate and the earth's temperature by burning fossil fuels, cutting down rainforests and farming livestock. This adds enormous amounts of greenhouse gases to those naturally occurring in the atmosphere, increasing the greenhouse effect and global warming. If you would like to know more about what causes climate change, ask me how different economic sectors of our planet such as farming, transportation, energy production, etc contribute to climate change."
+        
+                
+      ]
+    },
+
+    {
+      "tag": " Climate change contribution by transporation industry ",
+      "patterns": [ 
+        "How much co2 is released by shipping industry?",
+        "How much co2 is released by transportation ?",
+        "how does transporation cause climate change?",
+        "How does cars and trucks cause climate change?"
+        
+        
+        
+      ],
+      "responses": [      
+
+        "The American transportation sector is responsible for about a third of our country’s climate-damaging emissions. In California transportation is the leading source of greenhouse gas pollution, accounting for about 40% of the state’s emissions. Fossil-fueled transportation emissions also create smog, soot and other harmful air pollution. Maritime transport emits around 940 million tonnes of CO2 annually and is responsible for about 2.5% of global greenhouse gas.",
+
+
+        "Our personal vehicles are a major cause of global warming. Collectively, cars and trucks account for nearly one-fifth of all US emissions. Ships are also responsible for more than 18 percent of some air pollutants. It also includes greenhouse gas emissions. The International Maritime Organization estimates that carbon dioxide emissions from shipping were equal to 2.2% of the global human-made emissions in 2012 and expects them to rise 50 to 250 percent by 2050 if no action is taken. ",
+        
+        "The fastest growing sources of greenhouse gas emissions are from international aviation and shipping. Emissions have increased by nearly 130% and 32% respectively over the past two decades. This was the fastest growth in the whole transport sector - the only sector in which emissions have risen since 1990. Despite improvements in fuel consumption, emissions from planes in 2050 are expected to be 7 to 10 times higher than 1990 levels, while emissions from ships are projected to increase by 50% to 250%."
+
+      ]
     }
+
     
   ]
   
