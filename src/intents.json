@@ -783,6 +783,82 @@
       ]
     }
 
+    ,
+
+    {
+      "tag": " Solutions to rising sea Levels ",
+      "patterns": [ 
+        "how do we adapt to rising sea levels?",
+        "How can we mitigate the effects of rising sea levels",
+        "What are some Solutions to rising sea levels"
+        
+        
+      ],
+      "responses": [
+
+        "Sea level rise solutions can save communities and habitats, but they take time to implement. One solution that cities employ to decrease flooding from tides and storms is constructing seawalls.Raising roads above sea level can help drain water and reduce tidal flooding. Coastal communities can restore natural infrastructure, which can act as a buffer against storms and coastal flooding. Natural structures such as barrier islands, oyster and coral reefs, mangroves, seagrass, and salt marshes can work alone or in unison with built infrastructure, like seawalls, to absorb storm surge.Though communities are implementing many of the solutions available to help stave off extreme land loss, some are considering relocation. ",
+
+        "Flooding due to sea level rise is a big challenge, but there are solutions to keep coastal communities safe. Houses can be raised above flood levels by using six-foot tall wooden stilts or concrete blocks. Seawalls can be built on the coast to decrease flooding from tides and storms. Raising roads above sea level can help drain water and reduce tidal flooding. "
+      
+
+      ]
+    },
+
+    {
+      "tag": "Ocean acidification ",
+      "patterns": [ 
+        "What is causing ocean acidification? ",
+        "How is climate change causing ocean acidification?",
+        "what are the effects of ocean acidification"
+        
+      ],
+      "responses": [
+
+        "At least one-quarter of the carbon dioxide (CO2) released by burning coal, oil and gas doesn't stay in the air, but instead dissolves into the ocean. Since the beginning of the industrial era, the ocean has absorbed some 525 billion tons of CO2 from the atmosphere, presently around 22 million tons per day. Ocean acidification has the potential to affect food security. Commercially and ecologically important marine species will be impacted, although they may respond in different ways. Molluscs such as oysters and mussels are among the most sensitive groups.",
+
+        "Increasing CO2 in the atmosphere due to human activities not only affects the climate; it also has direct, chemical effects on ocean waters. When CO2 dissolves in seawater, the water becomes more acidic. The acidity of the oceans has increased by 26 % since about 1850, a rate of change roughly 10 times faster than any time in the last 55 million years. Laboratory studies suggest changing ocean chemistry will 1) harm life forms that rely on carbonate-based shells and skeletons, 2) harm organisms sensitive to acidity and 3) harm organisms higher up the food chain that feed on these sensitive organisms. However, we do not yet know exactly how ecosystems will be impacted. "
+      ]
+    },
+
+    {
+      "tag": " Wildfires ",
+      "patterns": [ 
+        "How is climate change increasing wildfires?",
+        "How are wildfires the result of climate change",
+        
+        
+        
+      ],
+      "responses": [
+
+        "Climate change exacerbates the factors that create perfect fire conditions. Lower precipitation and warmer air temperatures dry the forests and other vegetation. Add strong winds and decades of fire suppression into the mix and you have a dangerous recipe for wildfire. Global warming boosted the risk of the hot, dry weather that's likely to cause bushfires by at least 30%, they say. At least 33 people were killed and more than 11 million hectares (110,000 sq km or 27.2 million acres) of bush, forest and parks across Australia burned.",
+
+        "Every year, millions of acres of land are consumed by fire in the United States. By raising temperatures, melting snow sooner, and drying soils and forests, climate change is fueling the problem. Here’s what we know. Climate change is driving the scale and impact of recent wildfires that have raged in California, say scientists. California now has greater exposure to fire risks than before humans started altering the climate, the authors say. That study showed that climate change was behind an increase in the frequency and severity of fire weather - defined as periods of time with a higher risk of fire due to a combination of high temperatures, low humidity, low rainfall and high winds."
+      
+
+      ]
+    },
+
+
+    {
+      "tag": " Climate change prevention ",
+      "patterns": [ 
+        "Is it too late to prevent climate change?",
+        "How can we stop climate climate change?"      
+        
+        
+        
+      ],
+      "responses": [
+
+        "Humans have caused major climate changes to happen already, and we have set in motion more changes still. Even if we stopped emitting greenhouse gases today, global warming would continue to happen for at least several more decades, if not centuries.  Responding to climate change will involve a two-tier approach: 1) “mitigation” – reducing the flow of greenhouse gases into the atmosphere; and 2) “adaptation” – learning to live with, and adapt to, the climate change that has already been set in motion.", 
+        "Promoting public transportation, carpooling, but also electric and hydrogen mobility, can definitely help reduce CO2 emissions and thus fight global warming. Adopting responsible consumption habits is crucial, be it regarding food (particularly meat), clothing, cosmetics or cleaning products. Last but not least, recycling is an absolute necessity for dealing with waste. The IPCC report, which the U.N. climate science body released Oct. 8, 2018, revealed that the best path to limiting warming to an increase of 1.5 C by 2100 involves cutting net human carbon dioxide (CO2) emissions 45% by 2030",
+        "The first way to prevent climate change is to move away from fossil fuels. What are the alternatives? Renewable energies like solar, wind, biomass and geothermal. Encouraging better use of natural resources, stopping massive deforestation as well as making agriculture greener and more efficient should also be a priority."
+      
+
+      ]
+    }
+
     
   ]
   
