@@ -660,7 +660,225 @@
       "responses": [
         "In North America, the ten most endangered plants are,  Western Prairie Fringed Orchid, Rafflesia Flower, Georgia Aster, Wiggin's Acalypha, Texas Wild Rice, Howell's Spectacular Thelypody, Stenogyne Kanehoana, Ouachita Mountain Goldenrod, Enrubio, Arizona Agave. Let me know if you want to know more information about any of the plants on the list."
       ]
+    },
+
+    {
+      "tag": "What is Climate Change",
+      "patterns": [ 
+        "Tell me about Climate Change.",
+        "Can you tell me about Climate Change?",
+        "What is Climate Change?",
+        "What is global warming?",
+        "Is climate change real?"
+        
+      ],
+      "responses": [
+        "Climate change, also called global warming, refers to the rise in average surface temperatures on Earth. An overwhelming scientific consensus maintains that climate change is due primarily to the human use of fossil fuels, which releases carbon dioxide and other greenhouse gases into the air. The gases trap heat within the atmosphere, which can have a range of effects on ecosystems, including rising sea levels, severe weather events, and droughts that render landscapes more susceptible to wildfires. If you want to know more, ask me about the effects, causes of climate change and the implications of a warming planet on life on earth.",
+
+        "Solar energy radiating back to space from the Earth's surface is absorbed by greenhouse gases and re-emitted in all directions.This heats both the lower atmosphere and the surface of the planet.Scientists believe we are adding to the natural greenhouse effect, with gases released from industry and agriculture trapping more energy and increasing the temperature. This is known as climate change or global warming. If you want to know more, ask me about the effects, causes of climate change and the implications of a warming planet on life on earth.",
+
+        "Climate change includes both the global warming driven by human emissions of greenhouse gases, and the resulting large-scale shifts in weather patterns. Though there have been previous periods of climatic change, since the mid-20th century the rate of human impact on Earth's climate system and the global scale of that impact have been unprecedented. If you want to know more, ask me about the effects, causes of climate change and the implications of a warming planet on life on earth."
+        
+      ]
+    },
+
+
+    {
+      "tag": "Causes Climate Change ",
+      "patterns": [ 
+        "Why is the climate changing?",
+        "What is causing climate change?",
+        "What is the cause of climate change?",
+        "Causes of climate change"
+        
+      ],
+      "responses": [
+        "The primary cause of climate change is the burning of fossil fuels, such as oil and coal, which emits greenhouse gases into the atmosphere—primarily carbon dioxide. Other human activities, such as agriculture and deforestation, also contribute to the proliferation of greenhouse gases that cause climate change. If you would like to know more about what causes climate change, ask me how different economic sectors of our planet such as farming, transportation, energy production, etc contribute to climate change.",
+
+        "Human activity is the main cause of climate change. People burn fossil fuels and convert land from forests to agriculture. Since the beginning of the Industrial Revolution, people have burned more and more fossil fuels and changed vast areas of land from forests to farmland. If you would like to know more about what causes climate change, ask me how different economic sectors of our planet such as farming, transportation, energy production, etc contribute to climate change.",
+             
+        "Humans are increasingly influencing the climate and the earth's temperature by burning fossil fuels, cutting down rainforests and farming livestock. This adds enormous amounts of greenhouse gases to those naturally occurring in the atmosphere, increasing the greenhouse effect and global warming. If you would like to know more about what causes climate change, ask me how different economic sectors of our planet such as farming, transportation, energy production, etc contribute to climate change."
+        
+                
+      ]
+    },
+
+    {
+      "tag": " Climate Change transporation industry ",
+      "patterns": [ 
+        "How much co2 is released by shipping industry?",
+        "How much co2 is released by transportation ?",
+        "how does transporation cause climate change?",
+        "How does cars and trucks cause climate change?"
+        
+        
+        
+      ],
+      "responses": [      
+
+        "The American transportation sector is responsible for about a third of our country’s climate-damaging emissions.",
+
+
+        "Our personal vehicles are a major cause of global warming. Collectively, cars and trucks account for nearly one-fifth of all US emissions. Ships are also responsible for more than 18 percent of some air pollutants. ",
+        
+        "The fastest growing sources of greenhouse gas emissions are from international aviation and shipping. "
+
+      ]
+    },
+
+    {
+      "tag": " Climate Change Farming and Agriculture ",
+      "patterns": [ 
+        "How does farming cause climate change?",
+        "How does agriculture cause climate change ?",
+        "Effects of farming and agriculture on climate change?"
+        
+        
+        
+        
+      ],
+      "responses": [      
+
+        "Modern agriculture, food production and distribution are major contributors of greenhouse gases: Agriculture is directly responsible for 14 per cent of total greenhouse gas emissions, and broader rural land use decisions have an even larger impact.",
+
+        "According to the International Panel of Climate Change agriculture, forestry and the change of land-use, account for as much as 25% of human induced GHG emissions. Agriculture is one of the main sources of emitted methane and nitrous oxide.", 
+
+        "Agriculture, especially intensive agriculture, characterised by monocultures and aimed at feeding farm animals – is one of the sectors that generates the highest amount of emissions of CO2 (the main greenhouse gas). "
+      ]
+    },
+
+    {
+      "tag": "Effects Climate Change ",
+      "patterns": [ 
+        "What are the effects of climate change?",
+        "How will climate change affect us?",
+        "How will climate change affect life on earth?",
+        "Effects of climate change."
+        
+      ],
+      "responses": [
+        "Even small increases in Earth’s temperature caused by climate change can have severe effects.Rising sea levels due to the melting of the polar ice caps  contribute to greater storm damage; additional rainfall, particularly during severe weather events, leads to flooding and other damage; Let me know if you want to know more about how climate change will cause extreme weather events such as droughts, flooding, ocean acidification, loss of bio diversity, rising sea levels and the repercussions of these effects on our societies.",
+
+        "The direct consequences of man-​made climate change include: rising sea levels, higher ocean temperatures, an increase in heavy rainfall and flooding, loss of biodiversity, ocean acidification. Let me know if you want to know more about how climate change will cause extreme weather events such as droughts, wildfires flooding, ocean acidification, loss of bio diversity, rising sea levels and the repercussions of these effects on our socieites.",
+
+        "More frequent and intense drought, storms, heat waves, rising sea levels, melting glaciers and warming oceans can directly harm animals, destroy the places they live, and wreak havoc on people's livelihoods and communities."
+      ]
+    },
+
+    {
+      "tag": "Rising Sea Levels ",
+      "patterns": [ 
+        "What happens if the sea levels rises",
+        "What are the effects of rising sea levels?",
+        "How will rising sea level effect countries?",
+        "How climate change is increasing rising sea levels?"
+        
+      ],
+      "responses": [
+
+        "Water is increasingly invading coastal areas, causing soil erosion and threatening farmland, housing or recreation areas. A higher sea level causes heavy rains and strong winds and unleashes severe storms.",
+
+        "Rising sea levels pose a major threat to island nations and coastal areas meaning that these areas could be swamped and submerged by water anytime in the future. Ask me how we can adapt to rising sea levels to know more about solutions to rising sea levels. "
+
+      ]
     }
+
+    ,
+
+    {
+      "tag": " Solutions rising sea levels ",
+      "patterns": [ 
+        "how do we adapt to rising sea levels?",
+        "How can we mitigate the effects of rising sea levels",
+        "What are some Solutions to rising sea levels"
+        
+        
+      ],
+      "responses": [
+
+        "One solution that cities employ to decrease flooding from tides and storms is constructing seawalls.Raising roads above sea level can help drain water and reduce tidal flooding. Natural structures such as barrier islands, oyster and coral reefs, mangroves, seagrass, and salt marshes can work alone or in unison with built infrastructure, like seawalls, to absorb storm surge. ",
+
+        "Houses can be raised above flood levels by using six-foot tall wooden stilts or concrete blocks. Seawalls can be built on the coast to decrease flooding from tides and storms. Raising roads above sea level can help drain water and reduce tidal flooding. "
+      
+
+      ]
+    },
+
+    {
+      "tag": "Ocean acidification ",
+      "patterns": [ 
+        "What is causing ocean acidification? ",
+        "How is climate change causing ocean acidification?",
+        "what are the effects of ocean acidification"
+        
+      ],
+      "responses": [
+
+        "At least one-quarter of the carbon dioxide (CO2) released by burning coal, oil and gas doesn't stay in the air, but instead dissolves into the ocean.Ocean acidification has the potential to affect food security. Molluscs such as oysters and mussels are among the most sensitive groups.",
+
+        "Increasing CO2 in the atmosphere due to human activities not only affects the climate; it also has direct, chemical effects on ocean waters. When CO2 dissolves in seawater, the water becomes more acidic. The acidity of the oceans has increased by 26 % since about 1850, a rate of change roughly 10 times faster than any time in the last 55 million years. Laboratory studies suggest changing ocean chemistry will 1) harm life forms that rely on carbonate-based shells and skeletons, 2) harm organisms sensitive to acidity and 3) harm organisms higher up the food chain that feed on these sensitive organisms. However, we do not yet know exactly how ecosystems will be impacted. "
+      ]
+    },
+
+    {
+      "tag": " Wildfires ",
+      "patterns": [ 
+        "How is climate change increasing wildfires?",
+        "How are wildfires the result of climate change"
+        
+        
+        
+      ],
+      "responses": [
+
+        "Lower precipitation and warmer air temperatures dry the forests and other vegetation. Add strong winds and decades of fire suppression into the mix and you have a dangerous recipe for wildfire. Global warming boosted the risk of the hot, dry weather that's likely to cause bushfires by at least 30%.",
+
+        "Climate change is driving the scale and impact of recent wildfires that have raged in California. California now has greater exposure to fire risks than before humans started altering the climate. "
+      
+
+      ]
+    },
+
+
+    {
+      "tag": " Climate Change prevention ",
+      "patterns": [ 
+        "Is it too late to prevent climate change?",
+        "How can we stop climate climate change?"      
+        
+        
+        
+      ],
+      "responses": [
+
+        "Responding to climate change will involve a two-tier approach: 1) “mitigation” – reducing the flow of greenhouse gases into the atmosphere; and 2) “adaptation” – learning to live with, and adapt to, the climate change that has already been set in motion.", 
+        "Promoting public transportation, carpooling, but also electric and hydrogen mobility, can definitely help reduce CO2 emissions and thus fight global warming. Adopting responsible consumption habits is crucial, be it regarding food (particularly meat), clothing, cosmetics or cleaning products. Last but not least, recycling is an absolute necessity for dealing with waste. ",
+        "The first way to prevent climate change is to move away from fossil fuels. What are the alternatives? Renewable energies like solar, wind, biomass and geothermal. Encouraging better use of natural resources, stopping massive deforestation as well as making agriculture greener and more efficient should also be a priority."
+      
+
+      ]
+    },
+
+    {
+      "tag": " Climate change effects ",
+      "patterns": [ 
+        "How is climate change driving extinctions?",
+        "How are animals being endangered due to climate change?"      
+        
+        
+        
+      ],
+      "responses": [
+
+          "Many species will not be able to redistribute themselves fast enough to keep up with the coming changes.These species, as far as we know given present knowledge, may well become extinct.",
+          "A large fraction of both terrestrial and freshwater species faces increased extinction risk under projected climate change during and beyond the 21st century, especially as climate change interacts with other stressors, such as habitat modification, over-exploitation, pollution, and invasive species. If the temperature of South Africa were to rise by at least 4.5 degrees Celsius, this area would lose about 90% of its amphibians, 86% of birds, and 80% of mammals."
+          
+
+      ]
+    }
+
+
+
     
   ]
   
