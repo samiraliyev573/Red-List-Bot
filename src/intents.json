@@ -684,7 +684,7 @@
 
 
     {
-      "tag": "Causes of Climate Change ",
+      "tag": "Causes Climate Change ",
       "patterns": [ 
         "Why is the climate changing?",
         "What is causing climate change?",
@@ -704,7 +704,7 @@
     },
 
     {
-      "tag": " Climate change contribution by transporation industry ",
+      "tag": " Climate Change transporation industry ",
       "patterns": [ 
         "How much co2 is released by shipping industry?",
         "How much co2 is released by transportation ?",
@@ -727,11 +727,11 @@
     },
 
     {
-      "tag": " Climate change contribution from farming and agriculture ",
+      "tag": " Climate Change Farming and Agriculture ",
       "patterns": [ 
         "How does farming cause climate change?",
         "How does agriculture cause climate change ?",
-        "Effects of farming and agriculture on climate change?",
+        "Effects of farming and agriculture on climate change?"
         
         
         
@@ -748,7 +748,7 @@
     },
 
     {
-      "tag": "Effects of Climate Change ",
+      "tag": "Effects Climate Change ",
       "patterns": [ 
         "What are the effects of climate change?",
         "How will climate change affect us?",
@@ -786,7 +786,7 @@
     ,
 
     {
-      "tag": " Solutions to rising sea Levels ",
+      "tag": " Solutions rising sea levels ",
       "patterns": [ 
         "how do we adapt to rising sea levels?",
         "How can we mitigate the effects of rising sea levels",
@@ -824,7 +824,7 @@
       "tag": " Wildfires ",
       "patterns": [ 
         "How is climate change increasing wildfires?",
-        "How are wildfires the result of climate change",
+        "How are wildfires the result of climate change"
         
         
         
@@ -841,7 +841,7 @@
 
 
     {
-      "tag": " Climate change prevention ",
+      "tag": " Climate Change prevention ",
       "patterns": [ 
         "Is it too late to prevent climate change?",
         "How can we stop climate climate change?"      
