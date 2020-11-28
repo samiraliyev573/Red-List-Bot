@@ -724,6 +724,63 @@
         "The fastest growing sources of greenhouse gas emissions are from international aviation and shipping. Emissions have increased by nearly 130% and 32% respectively over the past two decades. This was the fastest growth in the whole transport sector - the only sector in which emissions have risen since 1990. Despite improvements in fuel consumption, emissions from planes in 2050 are expected to be 7 to 10 times higher than 1990 levels, while emissions from ships are projected to increase by 50% to 250%."
 
       ]
+    },
+
+    {
+      "tag": " Climate change contribution from farming and agriculture ",
+      "patterns": [ 
+        "How does farming cause climate change?",
+        "How does agriculture cause climate change ?",
+        "Effects of farming and agriculture on climate change?",
+        
+        
+        
+        
+      ],
+      "responses": [      
+
+        "Modern agriculture, food production and distribution are major contributors of greenhouse gases: Agriculture is directly responsible for 14 per cent of total greenhouse gas emissions, and broader rural land use decisions have an even larger impact. Deforestation currently accounts for an additional 18 per cent of emissions.",
+
+        "According to the International Panel of Climate Change agriculture, forestry and the change of land-use, account for as much as 25% of human induced GHG emissions. Agriculture is one of the main sources of emitted methane and nitrous oxide.", 
+
+        "Agriculture, especially intensive agriculture, characterised by monocultures and aimed at feeding farm animals – is one of the sectors that generates the highest amount of emissions of CO2 (the main greenhouse gas). This quantity can be compared only to the sum total of the CO2 emitted by all forms of transportation. By looking deeper, we can observe that agriculture and the deforestation it causes were responsible for one fifth (21 per cent) of all CO2 emissions in the decade from 2000 to 2010 (approximately 44 billion tonnes)."
+      ]
+    },
+
+    {
+      "tag": "Effects of Climate Change ",
+      "patterns": [ 
+        "What are the effects of climate change?",
+        "How will climate change affect us?",
+        "How will climate change affect life on earth?",
+        "Effects of climate change."
+        
+      ],
+      "responses": [
+        "Even small increases in Earth’s temperature caused by climate change can have severe effects.Rising sea levels due to the melting of the polar ice caps  contribute to greater storm damage; warming ocean temperatures are associated with stronger and more frequent storms; additional rainfall, particularly during severe weather events, leads to flooding and other damage; an increase in the incidence and severity of wildfires threatens habitats, homes, and lives; and heat waves contribute to human deaths and other consequences. Let me know if you want to know more about how climate change will cause extreme weather events such as droughts, flooding, ocean acidification, loss of bio diversity, rising sea levels and the repercussions of these effects on our societies.",
+
+        "The direct consequences of man-​made climate change include: rising sea levels, higher ocean temperatures, an increase in heavy rainfall and flooding, loss of biodiversity, ocean acidification. Let me know if you want to know more about how climate change will cause extreme weather events such as droughts, wildfires flooding, ocean acidification, loss of bio diversity, rising sea levels and the repercussions of these effects on our socieites.",
+
+        "More frequent and intense drought, storms, heat waves, rising sea levels, melting glaciers and warming oceans can directly harm animals, destroy the places they live, and wreak havoc on people's livelihoods and communities. As climate change worsens, dangerous weather events are becoming more frequent or severe. Let me know if you want to know more about how climate change will cause extreme weather events such as droughts, flooding, ocean acidification, loss of bio diversity, rising sea levels and the repercussions of these effects on our societies."
+      ]
+    },
+
+    {
+      "tag": "Rising Sea Levels ",
+      "patterns": [ 
+        "What happens if the sea levels rises",
+        "What are the effects of rising sea levels?",
+        "How will rising sea level effect countries?",
+        "How climate change is increasing rising sea levels?"
+        
+      ],
+      "responses": [
+
+        "Water is increasingly invading coastal areas, causing soil erosion and threatening farmland, housing or recreation areas. The flooding of wetlands and pollution of aquifers also occur, affecting the flora and fauna of each place, causing the loss of habitat for fish, birds, plants and many other species. On the other hand, a higher sea level causes heavy rains and strong winds and unleashes severe storms. On the social aspect, the constant threat of sea level rise menaces hundreds of millions of people living in coastal communities. If water continues to rise, they will be forced to abandon their homes and move to another area, with the corresponding demographic problem. This is known as forced migration resulting from climate change. Finally, low-lying islands would be swallowed by the oceans, leading to the disappearance of large land areas and even some countries. Ask me how we can adapt to rising sea levels to know more about solutions to rising sea levels.",
+
+        "Rising sea levels pose a major threat to island nations and coastal areas meaning that these areas could be swamped and submerged by water anytime in the future. In countries like the United States, where almost 40 percent of the population resides in coastal areas, the flooding due to sea-level rise is expected to create adverse effects. The presence of more saltwater on the shores will disrupt the ecosystem, resulting In the vanishing of different kinds of plants. In addition to it would make to the soil and plants, the wildlife on the beaches would also be hurt by the rapid changes in the climate conditions. Ask me how we can adapt to rising sea levels to know more about solutions to rising sea levels. "
+
+      ]
     }
 
     
