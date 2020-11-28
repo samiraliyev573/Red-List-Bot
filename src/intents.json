@@ -857,7 +857,27 @@
       
 
       ]
+    },
+
+    {
+      "tag": " Climate change effects ",
+      "patterns": [ 
+        "How is climate change driving extinctions?",
+        "How are animals being endangered due to climate change?"      
+        
+        
+        
+      ],
+      "responses": [
+
+          "WWF scientists have estimated that most species on this planet (including plants) will have to migrate faster than 1,000 metres per year if they are to keep within the climate zone which they need for survival. Many species will not be able to redistribute themselves fast enough to keep up with the coming changes.These species, as far as we know given present knowledge, may well become extinct.",
+          "A large fraction of both terrestrial and freshwater species faces increased extinction risk under projected climate change during and beyond the 21st century, especially as climate change interacts with other stressors, such as habitat modification, over-exploitation, pollution, and invasive species. To give some examples of the animals and particular regions and how they will be affected.  If the temperature of South Africa were to rise by at least 4.5 degrees Celsius, this area would lose about 90% of its amphibians, 86% of birds, and 80% of mammals.",
+          
+
+      ]
     }
+
+
 
     
   ]
