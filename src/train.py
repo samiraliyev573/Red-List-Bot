@@ -22,24 +22,38 @@ with open('intentsfortrain.json', 'r+') as i:
     # load contents of json file into intents
     intentsfortrain = json.load(i)
 
-    
+
+#"patterns": [
+#        "Hi",
+#        "Hey",
+#        "How are you?",
+#        "Is anyone there?",
+#        "Hello",
+#        "Greetings and Salutations",
+#        "Good day"
+#      ],  
 
 
-for intent in intentsfortrain['intents']:
+for  (patternindex,intent) in enumerate( intentsfortrain['intents'], start = 1):
     for pattern in intent['patterns']:
         print("Sentence" ,pattern)
+        print("Index",patternindex)
         patter_list_sentence = show_part_of_speech(pattern)
         for i in patter_list_sentence:
             print("Word: " ,i[0])
             print("Tag:",i[1])
             newsentence = ""
+            newpattern = {"patterns": "pattern"}
             if i[1] == 'JJ': 
                 synonyms = synonym_recognition(i[0])
                 print("Synonyms for the word is: ",synonyms)
                 for synonym in synonyms:
-                    newsentence = pattern.replace(i[0], synonym)
-                    
-                    print(newsentence)
+                    newsentence = pattern.replace(i[0], synonym)+" \n"
+                
+                print(newsentence)
+                #    intentsfortrain["0"]["patterns"].append({newsentence})
+                #newpattern["patterns"] = newsentence
+                #print(newpattern)
             
 
 
