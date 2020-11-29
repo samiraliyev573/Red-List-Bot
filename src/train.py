@@ -39,27 +39,33 @@ for  (patternindex,intent) in enumerate( intentsfortrain['intents'], start = 1):
         print("Sentence" ,pattern)
         print("Index",patternindex)
         patter_list_sentence = show_part_of_speech(pattern)
+        newsentencelist = []
+        newpattern= []
+        currentpattern = []
+        totalpattern = []
         for i in patter_list_sentence:
             print("Word: " ,i[0])
             print("Tag:",i[1])
             newsentence = ""
-            newpattern = {"patterns": "pattern"}
+            
+            
             if i[1] == 'JJ': 
                 synonyms = synonym_recognition(i[0])
                 print("Synonyms for the word is: ",synonyms)
-                for synonym in synonyms:
-                    newsentence = pattern.replace(i[0], synonym)+" \n"
                 
-                print(newsentence)
-                #    intentsfortrain["0"]["patterns"].append({newsentence})
-                #newpattern["patterns"] = newsentence
-                #print(newpattern)
-            
-
-
-    
-
-
+                for synonym in synonyms:
+                    newsentence = pattern.replace(i[0], synonym)
+                    print("New sentences: ", newsentence)
+                    #print(newsentence)
+                    newsentencelist.append(newsentence)
+                    currentpattern = intent["patterns"];
+                    
+                    newpattern = newsentencelist
+                    totalpattern = currentpattern + newpattern
+                    intent["patterns"] = totalpattern
+                    
+        print("Total Pattern: " , totalpattern) 
+                
 
 
 
