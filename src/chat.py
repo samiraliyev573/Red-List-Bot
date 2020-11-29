@@ -2,7 +2,7 @@ import random
 import json
 import torch
 from model import NeuralNet
-from nltkproperties import bag_of_words, tokenize, synonym_recognition
+from nltkproperties import bag_of_words, tokenize, synonym_recognition, show_part_of_speech
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
@@ -30,14 +30,15 @@ bot_name = "Red List Bot"
 
 # Made the commented code into a function so gui.py can ask and this function can return
 def chat(sentence):
+    pos_sentence = show_part_of_speech(sentence)
+    print(pos_sentence)
     if sentence == 'quit':
         return "Quit has been asked"
     sentence = tokenize(sentence)
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
     
-    Y = synonym_recognition(sentence)
-    print(Y)
+    
     
     X = torch.from_numpy(X).to(device)
     
@@ -49,7 +50,7 @@ def chat(sentence):
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
 
-    if prob.item() > 0.95:
+    if prob.item() > 0.85:
 
         for intent in intents["intents"]:
             if tag == intent["tag"]:

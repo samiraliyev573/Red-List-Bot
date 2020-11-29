@@ -2,7 +2,7 @@
 import json
 import torch
 import torch.nn as nn
-from nltkproperties import tokenize, stem, bag_of_words
+from nltkproperties import tokenize, stem, bag_of_words, show_part_of_speech
 import numpy as np
 from torch.utils.data import Dataset, DataLoader
 from model import NeuralNet
@@ -11,6 +11,23 @@ from model import NeuralNet
 with open('intents.json', 'r') as i:
     # load contents of json file into intents
     intents = json.load(i)
+
+
+
+for intent in intents['intents']:
+    for pattern in intent['patterns']:
+        print(pattern)
+        patter_list_sentence = show_part_of_speech(pattern)
+        for i in patter_list_sentence:
+            print("Word: " ,i[0])
+            print("Tag: ", i[1])
+       
+
+
+    
+
+
+
 
 
 all_words = []
