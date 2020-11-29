@@ -6,6 +6,7 @@ from nltk.stem.porter import PorterStemmer
 # Importing wordnet. Will be used for synonym recognition 
 from nltk.corpus import wordnet
 
+from nltk.tokenize import PunktSentenceTokenizer
 nltk.download('punkt')
 
 stemmer = PorterStemmer()
@@ -30,19 +31,19 @@ def synonym_recognition(word):
     
     return synonyms
 
-def get_synonyms(word1):
-    synonymList1 = []
-    for data1 in word1:
-        wordnetSynset1 = wn.synsets(data1)
-        tempList1=[]
-        for synset1 in wordnetSynset1:
-            synLemmas = synset1.lemma_names()
-            for i in xrange(len(synLemmas)):
-                word = synLemmas[i].replace('_',' ')
-                if word not in tempList1:
-                    tempList1.append(word)
-        synonymList1.append(tempList1)
-    return synonymList1
+def show_part_of_speech(sentence):
+    sample_sentence = sentence
+    sentence_tokenizer = PunktSentenceTokenizer(sentence)
+    tokenized_sentence = sentence_tokenizer.tokenize(sample_sentence)
+    try:
+        for i in tokenized_sentence:
+            words = tokenize(i)
+            tagged = nltk.pos_tag(words)
+            print(tagged)
+    except Exception as e:
+        print(str(e))
+
+
 
 
 
