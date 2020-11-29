@@ -30,8 +30,12 @@ bot_name = "Red List Bot"
 
 # Made the commented code into a function so gui.py can ask and this function can return
 def chat(sentence):
+    # Show parts of speech for the user input
     pos_sentence = show_part_of_speech(sentence)
+
+    #print the output as a proof that part of speech works
     print(pos_sentence)
+    
     if sentence == 'quit':
         return "Quit has been asked"
     sentence = tokenize(sentence)

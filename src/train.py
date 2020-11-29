@@ -7,72 +7,79 @@ import numpy as np
 from torch.utils.data import Dataset, DataLoader
 from model import NeuralNet
 import shutil
-# opening intents.json because it contains tags patterns and responses
-#with open('intents.json', 'r+') as i:
-    # load contents of json file into intents
-#    intents = json.load(i)
-
-    #print(intents)
 
 
 
+
+# open the json file and load the data and get tags, patterns
 with open('intents.json', 'r+') as i:
     # load contents of json file into intents
     intents = json.load(i)
     
         
-
+# for every intent in intents note: there are around 39 intnets before merging with main
 for  (patternindex,intent) in enumerate( intents['intents'], start = 1):
+    # keeps track of what was in 'patterns' before
     previouslist = intent['patterns']
+    # for every sentence in patterns
     for pattern in intent['patterns']:
+        # print sentence
         print("Sentence" ,pattern)
+        # print index of the sentence. If its in first intent it will be 1 and if its in second intent it will be 2
         print("Index",patternindex)
+
+        #method to bring set of every word and parts of speech according to every word
         patter_list_sentence = show_part_of_speech(pattern)
+        # temp variables to be used for future
+        # list of new sentences that we will be creating with synonyms
         newsentencelist = []
         newpattern= []
         currentpattern = []
         totalpattern = []
+
+        # proof that part of speech works
         for i in patter_list_sentence:
+            # for every word print word
             print("Word: " ,i[0])
+            # for every word print what it is
             print("Tag:",i[1])
+            # new sentence 
             newsentence = ""
             
-            
+            # if part of speech is 'JJ' which means if its adjective
             if i[1] == 'JJ': 
+                # find synonyms for the word.
                 synonyms = synonym_recognition(i[0])
+                # sort the synonyms. Ex: word great has synonyms good, amazing, awesome, good. We dont want 2 'good' here
                 synonyms = sorted(set(synonyms))
-                print("Synonyms for the word is: ",synonyms)
 
+                # print the set for the proof
+                print("Synonyms for the word is: ",synonyms)
+                
+                # for every sentence in synonyms
                 for synonym in synonyms:
+                    # replace that word in pattern with the synonym and put it in new sentence
                     newsentence = pattern.replace(i[0], synonym)
+
+                    # printing new sentence showing that sentence has changed. If it was I feel good, it will now become I feel great
                     print("New sentences: ", newsentence)
-                    print(newsentence)
+                    
+                    # append this new sentence to the newsentence list
                     newsentencelist.append(newsentence)
+
+                    # what sentences are currently in 'patterns'
                     currentpattern = intent["patterns"];
                     
                     newpattern = newsentencelist
+
+                    # add new list with old responses and new sentences so we get more pattern
                     totalpattern = currentpattern + newpattern
-             
+        # save it in the actual intents    
         intent["patterns"] = totalpattern + previouslist  
-        
+        # print in the console to prove that there is now new list with sentences that contain synonyms
         print("Total Pattern", intent["patterns"])
     
         
-#print(intents)
-
-#"patterns": [
-#        "Hi",
-#        "Hey",
-#        "How are you?",
-#        "Is anyone there?",
-#        "Hello",
-#        "Greetings and Salutations",
-#        "Good day"
-#      ],  
-
-
-                
-
 
 
 all_words = []

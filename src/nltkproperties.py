@@ -25,14 +25,19 @@ def stem(word):
 
 # synonym recognition command
 def synonym_recognition(word):
+    # defining synonyms
     synonyms = []
+    # defining antonyms. We wont be using it but may need it for future reference by putting not in front of it, we can add it to list
     antonyms = []
+    # for every synset in wordnet that contains this word
     for syn in wordnet.synsets(word):
+        # for every synonym that is related to our word
         for l in syn.lemmas():
+            # append the synonym list
             synonyms.append(l.name())
             if l.antonyms():
                 antonyms.append(l.antonyms()[0].name())
-    
+    # return synonyms set
     return synonyms
 
 #POS tag list:
@@ -73,18 +78,27 @@ def synonym_recognition(word):
 #WP$ possessive wh-pronoun whose
 #WRB wh-abverb where, when
 
-
+# function to show parts of speech
 def show_part_of_speech(sentence):
+
     sample_sentence = sentence
+    # sentence tokenizer initializing
     sentence_tokenizer = PunktSentenceTokenizer(sample_sentence)
+    # tokenize the sentence
     tokenized_sentence = sentence_tokenizer.tokenize(sample_sentence)
+    # wrap around try catch block to prevent possible errors
     
     try:
+        # for every word in the sentence
         for i in tokenized_sentence:
+            # tokenize the word. note: we have already defined def tokenize and we will be using that
             words = tokenize(i)
+            # find parts of speech for the given word
             tagged = nltk.pos_tag(words)
+            # return list of tagged words with their tags
             return tagged
     except Exception as e:
+        # print error
         print(str(e))
 
 
