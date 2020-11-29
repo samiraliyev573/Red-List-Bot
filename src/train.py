@@ -14,11 +14,9 @@ import shutil
 
     #print(intents)
 
-src="intents.json"
-dst="intentsfortrain.json"
-shutil.copy(src,dst)
 
-with open('intentsfortrain.json', 'r+') as i:
+
+with open('intents.json', 'r+') as i:
     # load contents of json file into intents
     intents = json.load(i)
     

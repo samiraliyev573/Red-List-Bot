@@ -329,7 +329,7 @@ Tag: WRB
 Word:  do
 Tag: JJ
 Synonyms for the word is:  ['DO', 'Doctor_of_Osteopathy', 'act', 'answer', 'arrange', 'bash', 'behave', 'brawl', 'cause', 'coif', 'coiffe', 'coiffure', 'come', 'do', 'doh', 'dress', 'execute', 'exercise', 'fare', 'get_along', 'make', 'make_out', 'manage', 'perform', 'practice', 'practise', 'serve', 'set', 'suffice', 'ut']
-New sentences:  How DO animals become endangered?
+New sentences:  
 How DO animals become endangered?
 New sentences:  How Doctor_of_Osteopathy animals become endangered?
 How Doctor_of_Osteopathy animals become endangered?

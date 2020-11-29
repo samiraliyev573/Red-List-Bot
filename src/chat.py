@@ -50,7 +50,7 @@ def chat(sentence):
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
 
-    if prob.item() > 0.85:
+    if prob.item() > 0.70:
 
         for intent in intents["intents"]:
             if tag == intent["tag"]:
