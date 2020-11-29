@@ -8,11 +8,11 @@ from torch.utils.data import Dataset, DataLoader
 from model import NeuralNet
 import shutil
 # opening intents.json because it contains tags patterns and responses
-with open('intents.json', 'r+') as i:
+#with open('intents.json', 'r+') as i:
     # load contents of json file into intents
-    intents = json.load(i)
+#    intents = json.load(i)
 
-    print(intents)
+    #print(intents)
 
 src="intents.json"
 dst="intentsfortrain.json"
@@ -20,21 +20,12 @@ shutil.copy(src,dst)
 
 with open('intentsfortrain.json', 'r+') as i:
     # load contents of json file into intents
-    intentsfortrain = json.load(i)
+    intents = json.load(i)
+    
+        
 
-
-#"patterns": [
-#        "Hi",
-#        "Hey",
-#        "How are you?",
-#        "Is anyone there?",
-#        "Hello",
-#        "Greetings and Salutations",
-#        "Good day"
-#      ],  
-
-
-for  (patternindex,intent) in enumerate( intentsfortrain['intents'], start = 1):
+for  (patternindex,intent) in enumerate( intents['intents'], start = 1):
+    previouslist = intent['patterns']
     for pattern in intent['patterns']:
         print("Sentence" ,pattern)
         print("Index",patternindex)
@@ -51,20 +42,37 @@ for  (patternindex,intent) in enumerate( intentsfortrain['intents'], start = 1):
             
             if i[1] == 'JJ': 
                 synonyms = synonym_recognition(i[0])
+                synonyms = sorted(set(synonyms))
                 print("Synonyms for the word is: ",synonyms)
-                
+
                 for synonym in synonyms:
                     newsentence = pattern.replace(i[0], synonym)
                     print("New sentences: ", newsentence)
-                    #print(newsentence)
+                    print(newsentence)
                     newsentencelist.append(newsentence)
                     currentpattern = intent["patterns"];
                     
                     newpattern = newsentencelist
                     totalpattern = currentpattern + newpattern
-                    intent["patterns"] = totalpattern
-                    
-        print("Total Pattern: " , totalpattern) 
+             
+        intent["patterns"] = totalpattern + previouslist  
+        
+        print("Total Pattern", intent["patterns"])
+    
+        
+#print(intents)
+
+#"patterns": [
+#        "Hi",
+#        "Hey",
+#        "How are you?",
+#        "Is anyone there?",
+#        "Hello",
+#        "Greetings and Salutations",
+#        "Good day"
+#      ],  
+
+
                 
 
 
@@ -132,7 +140,7 @@ hidden_size = 8
 output_size = len(tags)
 input_size = len(X_train[0])
 learning_rate = 0.001
-num_epochs = 10000
+num_epochs = 2000
 
 
 dataset = ChatDataSet()
@@ -165,7 +173,7 @@ for epoch in range(num_epochs):
         loss.backward()
         optimizer.step()
     if (epoch+1) % 100 == 0:
-        print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}')
+        print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.9f}')
 
 print(f'final loss: {loss.item():.4f}')
 
