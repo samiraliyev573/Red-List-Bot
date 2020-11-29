@@ -2,26 +2,45 @@
 import json
 import torch
 import torch.nn as nn
-from nltkproperties import tokenize, stem, bag_of_words, show_part_of_speech
+from nltkproperties import tokenize, stem, bag_of_words, show_part_of_speech, synonym_recognition
 import numpy as np
 from torch.utils.data import Dataset, DataLoader
 from model import NeuralNet
-
+import shutil
 # opening intents.json because it contains tags patterns and responses
-with open('intents.json', 'r') as i:
+with open('intents.json', 'r+') as i:
     # load contents of json file into intents
     intents = json.load(i)
 
+    print(intents)
+
+src="intents.json"
+dst="intentsfortrain.json"
+shutil.copy(src,dst)
+
+with open('intentsfortrain.json', 'r+') as i:
+    # load contents of json file into intents
+    intentsfortrain = json.load(i)
+
+    
 
 
-for intent in intents['intents']:
+for intent in intentsfortrain['intents']:
     for pattern in intent['patterns']:
-        print(pattern)
+        print("Sentence" ,pattern)
         patter_list_sentence = show_part_of_speech(pattern)
         for i in patter_list_sentence:
             print("Word: " ,i[0])
-            print("Tag: ", i[1])
-       
+            print("Tag:",i[1])
+            newsentence = ""
+            if i[1] == 'JJ': 
+                synonyms = synonym_recognition(i[0])
+                print("Synonyms for the word is: ",synonyms)
+                for synonym in synonyms:
+                    newsentence = pattern.replace(i[0], synonym)
+                    
+                    print(newsentence)
+            
 
 
     
