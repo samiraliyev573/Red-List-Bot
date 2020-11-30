@@ -1,9 +1,13 @@
 # Red-List-Bot
-Red List bot that informs you about endangered species
+Red List bot that informs you about endangered species.
 
 
 
-# How to run chatbot
+
+
+# How to run chatbot 
+## Note: If you are using windows, simply double click on the InstallationWindows.bat and it will install all the necessary files.
+
 
 1. Clone the repository from github
 https://github.com/samiraliyev573/Red-List-Bot
@@ -14,15 +18,21 @@ https://www.python.org/downloads/
 3. Have anaconda installed. (In windows when downloading anaconda, check the box that says add anaconda to path environment variables.)
 Install anaconda here: https://docs.conda.io/projects/conda/en/latest/user-guide/install/
 
-4. Now we create anaconda environment so whatever we do will be outside our system and wont do any harm to our currently installed packages. Type 'conda create -n projenv python=3.8' (if this command doesnt work, update your conda by typing 'conda update conda')
+4. Now we create anaconda environment so whatever we do will be outside our system and wont do any harm to our currently installed packages. Type `conda create -n projenv python=3.8` (if this command doesnt work, update your conda by typing `conda update conda`)
 
 5. Now open terminal and navigate to the src folder of the project(You can also do it by opening in visual studio code and selecting new terminal.)
 
-6. Inside the src folder, type 'conda activate projenv'. Now our virtual environment is active inside this folder. Only thing left is to install necessary packages. 
-  Run: 'conda install pytorch torchvision torchaudio cpuonly -c pytorch' if in windows or 
-  conda install pytorch torchvision torchaudio -c pytorch if in macos.
-  Run 'conda install nltk'
-7. Last step is to type 'python chat.py' which will run the python file.
+6. Inside the src folder, type `conda activate projenv`. Now our virtual environment is active inside this folder. Only thing left is to install necessary packages. 
+  Run: `conda install pytorch torchvision torchaudio cpuonly -c pytorch` if in windows or 
+  `conda install pytorch torchvision torchaudio -c pytorch` if in macos.
+  
+  Run `conda install nltk`
+  Run `pip3 install gtts`
+  Run `pip3 install pygame`
+  Run `pip3 install playsound`
+  Run `pip3 install numpy`
+  
+7. Last step is to type 'python gui.py' which will run the python file.
 
 
 Enjoy the ChatBot ;)
