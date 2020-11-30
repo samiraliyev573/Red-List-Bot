@@ -12,7 +12,7 @@ import shutil
 
 
 # open the json file and load the data and get tags, patterns
-with open('intents.json', 'r+') as i:
+with open('intents.json', encoding='utf-8') as i:
     # load contents of json file into intents
     intents = json.load(i)
     

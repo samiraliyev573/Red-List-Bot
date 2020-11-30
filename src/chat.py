@@ -53,14 +53,14 @@ def chat(sentence):
     # check if the probability of this tag is high enough
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
-
+    notunderstand = ["Sorry, could you rephrase that?", "I'm not sure what you mean, could you say that another way?", "I'm afraid, I do not have a good response to that.", "I apologize. I can't quite get your meaning. Could you say that another way?", "'m not sure what you are trying to ask. I am only programmed to talk about certain fish and certain mammals who are near extinct.", "I am sorry, I'm not quite sure what you mean", "Could you phrase that differently? I don't quite understand."]
     if prob.item() > 0.70:
 
         for intent in intents["intents"]:
             if tag == intent["tag"]:
                 return random.choice(intent['responses'])
     else:
-        return "I do not understand"
+        return random.choice(notunderstand)
         
 
 
