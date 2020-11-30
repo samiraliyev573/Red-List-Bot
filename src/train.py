@@ -69,7 +69,7 @@ for  (patternindex,intent) in enumerate( intents['intents'], start = 1):
 
                     # what sentences are currently in 'patterns'
                     currentpattern = intent["patterns"];
-                    
+                    print("Before adding new synonyms: ", currentpattern)
                     newpattern = newsentencelist
 
                     # add new list with old responses and new sentences so we get more pattern

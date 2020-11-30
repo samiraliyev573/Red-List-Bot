@@ -6,7 +6,7 @@ from nltkproperties import bag_of_words, tokenize, synonym_recognition, show_par
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-with open('intents.json', 'r') as f:
+with open('intents.json', encoding='utf-8') as f:
     intents = json.load(f)
 
 FILE = 'data.pth'
