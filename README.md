@@ -3,11 +3,15 @@ Red List bot that informs you about endangered species.
 
 
 
-![alt text](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/GUIScreenshot.png)
+
 
 # How to run chatbot 
 ## Note: If you are using windows, simply double click on the InstallationWindows.bat and it will install all the necessary files.
 
+# Features: 
+
+## Simple Graphical User Interface
+![Screenshot](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/GUIScreenshot.png)
 
 1. Clone the repository from github
 https://github.com/samiraliyev573/Red-List-Bot
