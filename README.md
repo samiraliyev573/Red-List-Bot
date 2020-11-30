@@ -3,15 +3,19 @@ Red List bot that informs you about endangered species.
 
 
 
+# Features: 
+
+## Simple Graphical User Interface
+
+A graphical user interface (GUI) was implemented into the A2-Extension allowing users to have a standard windows or apple GUI including buttons to resize the window, minimize the window or close the window, a file menu and clickable-buttons to send chat messages to our bot. Additionally, the GUI contains a textbook to display recent conversation history. We have few additional features like clear chat where it cleans the entire conversation history so you can start as if nothing was written before and exit button where it closes the entire app. 
+
+![Screenshot](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/GUIScreenshot.png)
+
 
 
 # How to run chatbot 
 ## Note: If you are using windows, simply double click on the InstallationWindows.bat and it will install all the necessary files.
 
-# Features: 
-
-## Simple Graphical User Interface
-![Screenshot](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/GUIScreenshot.png)
 
 1. Clone the repository from github
 https://github.com/samiraliyev573/Red-List-Bot
