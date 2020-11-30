@@ -32,7 +32,7 @@ Install anaconda here: https://docs.conda.io/projects/conda/en/latest/user-guide
   Run `pip3 install playsound`
   Run `pip3 install numpy`
   
-7. Last step is to type `python gui.py` which will run the python file.
+7. Last step is to type `python3 gui.py` which will run the python file.
 
 
 Enjoy the ChatBot ;)
