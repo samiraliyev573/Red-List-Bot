@@ -28,13 +28,30 @@ As you can see from the screenshot, user asks `How aer you` or `See ya later` or
 POS Tagging(Part of speech tagging) is a very important feature in the development of the bot. It is used to identify nouns, adjectives, verbs and every phrase. We created `show_part_of_speech `function in `nltkproperties.py` which is the primary function for it. Sample output shows that method working on the user input. This very important because later we will be using it to identify adjectives in a sentence and implement for synonym recognition
 
 ![Screenshot](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/POSTagging.png)
-[Screenshot](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/POSTaggingproof.png)
+![Screenshot](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/POSTaggingproof.png)
 
  We can analyze one of the lines in the terminal output. 
 `[('Tell', 'VB'), ('me', 'PRP'), ('more', 'JJR'), ('about', 'IN'), ('Leopards', 'NNS')]`
 It identifies word Tell as VB(verb, base form), me as PRP(personal pronoun), more as JJR(adjective comparative), about as IN(preposition/subordinating conjunction) and Leopards as NNS(noun plural)
 
 ## Synonym Recognition:
+
+Synonym recognition is used for recognizing synonyms in the sentence. In our case, we had a function called synonym_recognition that returns the list of synonyms associated with the word. 
+This function now is being used in train.py class. In train.py I created an algorithm that goes through every pattern in intents.json, identifies adjectives using pos tagging, creates new sentence by replacing previous word with the synonym of the word. Then it creates list of sentences including every new sentence with the new synonym. It then appends the newsentence list to the previous pattern. If our pattern were to be `How big are rhinos?`, new pettern would be `How big are rhinos, How large are rhinos, How grown are Rhinos, How sizeable are Rhinos, How mammoth are Rhinos` and more.
+
+
+
+![Screenshot](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/SynonymRecognition.png)
+
+You can see from these screenshots that we do not have word near extinct and grown in the intents file. Bot was smart enough to recognize that the near is synonym to close and grown is synonym to big. 
+
+![Screenshot](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/SynonymRecognitionProof1.png)
+![Screenshot](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/SynonymRecognitionProof2.png)
+
+That being said, there are still a lot of limitations with the synonym recognition algorithm. It was very complex to implement so we only tried it on adjectives to prove that this is fully functional. Implementing them on verbs, nouns and pronounts will take more complexity yet can be completed with minor changes to methods and classes. 
+
+
+
 
 ## Text to Speech:
 
