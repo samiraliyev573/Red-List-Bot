@@ -13,6 +13,13 @@ For Graphical User Interface, I decided to go with tkinter library inside python
 
 ![Screenshot](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/GUIScreenshot.png)
 
+## UserInputSpellChecking
+
+![Screenshot](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/InputSpellChecking.png)
+
+![Screenshot](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/InputSpellCheckingProof1.png)
+![Screenshot](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/Input%20SpellCheckingProof2.png)
+![Screenshot](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/InputSpellCheckingProof3.png)
 
 
 # How to run chatbot 
