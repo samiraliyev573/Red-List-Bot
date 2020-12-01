@@ -45,7 +45,7 @@ This function now is being used in train.py class. In train.py I created an algo
 
 You can see from these screenshots that we do not have word near extinct and grown in the intents file. Bot was smart enough to recognize that the near is synonym to close and grown is synonym to big. 
 
-![Screenshot](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/SynonymRecognitionProof1.png)
+![Screenshot](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/SynonymRecognitionProof.png)
 ![Screenshot](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/SynonymRecognitionProof2.png)
 
 That being said, there are still a lot of limitations with the synonym recognition algorithm. It was very complex to implement so we only tried it on adjectives to prove that this is fully functional. Implementing them on verbs, nouns and pronounts will take more complexity yet can be completed with minor changes to methods and classes. 
@@ -55,11 +55,13 @@ That being said, there are still a lot of limitations with the synonym recogniti
 
 ## Text to Speech:
 
-
+One of the great features of the app is text to speech functionality. It is mainly for the disability support. When chatbot returns an answer, it also talks by using gtts(google text-to-speech) library to convert text into speech and save it in the audio file. Then it plays the audio file by using playsound library on windows, pygame library on macos. Once it finishes speaking the audio file, it automatically deletes using os package in python. For this to work, we had to use threading since main loop runs continiously and we need to provide exclusion to speech. 
+Everytime, before chatbot starts to speak, it creates a new thread and plays it with the help of threading package in python
 
 ## Categorized String Matching:
 
-
+Our intents.json file is basically a response tree. User asks a question, and model decides the category of the question which is represented as `tag` and then ideantifies which question it is by the probability of the user input being related to the question(pattern) in tag. If the probability is higher than 0.75(75%), model picks random response from the respose list and returns it to the user. 
+![Screenshot](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/categorizedstringmatching.png)
 
 # How to run chatbot 
 ## Note: If you are using windows, simply double click on the InstallationWindows.bat and it will install all the necessary files.
