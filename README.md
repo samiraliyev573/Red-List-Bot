@@ -25,6 +25,14 @@ As you can see from the screenshot, user asks `How aer you` or `See ya later` or
 ![Screenshot](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/InputSpellCheckingProof3.png)
 
 ## Part of Speech Tagging:
+POS Tagging(Part of speech tagging) is a very important feature in the development of the bot. It is used to identify nouns, adjectives, verbs and every phrase. We created `show_part_of_speech `function in `nltkproperties.py` which is the primary function for it. Sample output shows that method working on the user input. This very important because later we will be using it to identify adjectives in a sentence and implement for synonym recognition
+
+![Screenshot](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/POSTagging.png)
+[Screenshot](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/POSTaggingproof.png)
+
+ We can analyze one of the lines in the terminal output. 
+`[('Tell', 'VB'), ('me', 'PRP'), ('more', 'JJR'), ('about', 'IN'), ('Leopards', 'NNS')]`
+It identifies word Tell as VB(verb, base form), me as PRP(personal pronoun), more as JJR(adjective comparative), about as IN(preposition/subordinating conjunction) and Leopards as NNS(noun plural)
 
 ## Synonym Recognition:
 
