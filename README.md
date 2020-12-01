@@ -5,7 +5,7 @@ Red List bot that informs you about endangered species.
 
 # Features: 
 
-## Simple Graphical User Interface
+## Simple Graphical User Interface: 
 
 A graphical user interface (GUI) was implemented into the A2-Extension allowing users to have a standard windows or apple GUI including buttons to resize the window, minimize the window or close the window, a file menu and clickable-buttons to send chat messages to our bot. 
 
@@ -13,13 +13,27 @@ For Graphical User Interface, I decided to go with tkinter library inside python
 
 ![Screenshot](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/GUIScreenshot.png)
 
-## UserInputSpellChecking
+## User Input SpellChecking:
+
+Our Red List Bot uses natural language processing tools such as stemming and tokenization. This means that present, past, future tense doesnt matter and bot takes the root of every word. When user asks a question, bot splits the sentence into words and punctiations, stems the word(extracting root of the word) and then asks from its database. Model is also trained using stemming and tokenization to make it more fluent. 
 
 ![Screenshot](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/InputSpellChecking.png)
 
+As you can see from the screenshot, user asks `How aer you` or `See ya later` or `Which are animals endanger` but bot still recognizes this as greeting response. This is because we have set variance high enough to make it flexible while making sure that it doesnt answer randomly to every question and let user know when it doesnt have the answer.
 ![Screenshot](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/InputSpellCheckingProof1.png)
 ![Screenshot](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/Input%20SpellCheckingProof2.png)
 ![Screenshot](https://github.com/samiraliyev573/Red-List-Bot/blob/main/images/InputSpellCheckingProof3.png)
+
+## Part of Speech Tagging:
+
+## Synonym Recognition:
+
+## Text to Speech:
+
+
+
+## Categorized String Matching:
+
 
 
 # How to run chatbot 
