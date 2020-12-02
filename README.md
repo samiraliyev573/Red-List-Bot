@@ -57,6 +57,8 @@ That being said, there are still a lot of limitations with the synonym recogniti
 
 One of the great features of the app is text to speech functionality. It is mainly for the disability support. When chatbot returns an answer, it also talks by using gtts(google text-to-speech) library to convert text into speech and save it in the audio file. Then it plays the audio file by using playsound library on windows, pygame library on macos. Once it finishes speaking the audio file, it automatically deletes using os package in python. For this to work, we had to use threading since main loop runs continiously and we need to provide exclusion to speech. 
 Everytime, before chatbot starts to speak, it creates a new thread and plays it with the help of threading package in python
+[Demo](https://www.youtube.com/watch?v=76tbERg_9Bc&feature=youtu.be)
+
 
 ## Categorized String Matching:
 
