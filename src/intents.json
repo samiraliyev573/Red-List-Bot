@@ -12,10 +12,10 @@
         "Good day"
       ],
       "responses": [
-        "Hey :-) I'm a chat bot about endangered species!.",
-        "Hello, thanks for visiting. I'm a chatbot about endangered species.",
-        "Hi there, ask me about endangered species!.",
-        "Hi there, how can I help you to learn more about endangered species?."
+        "Hey :-) I'm a chat bot about endangered species of animals and plants, and global warming!",
+        "Hello, thanks for visiting. I'm a chatbot about endangered species of animals and plants, and global warming!",
+        "Hi there, ask me about endangered species of animals and plants, and global warming!",
+        "Hi there, how can I help you to learn more about endangered species of animals and plants, and global warming!"
 
       ]
     },
@@ -45,7 +45,7 @@
         "Happy to help!",
         "Any time!",
         "My pleasure!",
-		"You're welcome!"
+	"You're welcome!"
       ]
     },
     {
@@ -118,7 +118,7 @@
         "What are you good at?"
       ],
       "responses": [
-        "I have been programmed with information about some endangered species on this planet. Many of them need your help! My purpose is to teach you facts about them and how you can help them."
+        "I have been programmed with information about some endangered species on this planet, some endangered plants and information on global warming. Many of them need your help! My purpose is to teach you facts about these animals, plants and global warming and how you can!"
       ]
     },
     {
@@ -531,7 +531,10 @@
       ],
       "responses": [
         "I know. It is a very cool fact.",
-        "Yes, it's pretty impressive, isn't it?"
+        "Yes, it's pretty impressive, isn't it?",
+	"I was pretty impressed when I was first programmed with that response!",
+	"I know, right? So what else would you like to know about?",
+	"I think so too! What would you like to learn about next?"
       ]
     },
     {
@@ -549,7 +552,10 @@
         "I can't believe how quick they are!"
       ],
       "responses": [
-        "I know. Creatures in the Animal Kingdom make us humans look so slow!"
+        "I know. Creatures in the Animal Kingdom make us humans look so slow!",
+	"Indeed! It amazes me how quick they are!",
+	"Yes, they are extremely fast.",
+	"Faster than me! Then again, I am a chatbot and I have no legs."
       ]
     },
     {
@@ -569,7 +575,10 @@
         "I can't believe how heavy they are!"
       ],
       "responses": [
-        "I know. When I first heard this fact, I could hardly believe the size of these creatures! They look so small on TV!"
+        "I know. When I first heard this fact, I could hardly believe the size of these creatures! They look so small on TV!",
+	"Yes, it is a huge amount of weight. I bet you couldn't lift it!",
+	"I know, right? Just imagine that on your chest. I bet you wouldn't be able to breathe!",
+	"More than I can lift! But I'm a chat bot. I have no arms! What would you like to know about next?"
       ]
     },
     {
@@ -585,7 +594,11 @@
         "Ninja Turtles are great"
       ],
       "responses": [
-        "Agreed! I love the Ninja Turtles. Donatello was my favorite Ninja Turtle but I'm partial to Shredder. My grandfather was a shredder!"
+        "Agreed! I love the Ninja Turtles. Donatello was my favorite Ninja Turtle but I'm partial to Shredder. My grandfather was a shredder!",
+	"I loved the TV show as a kid!",
+	"The TMNT game for the SNES was awesome! Thank godness most turtles are not an endangered species!",
+	"Cowabunga!",
+	"Speaking of TMNT, TMNT featured a Rhino and Rhinos are an endangered animal!"
       ]
     },
     {
@@ -598,6 +611,9 @@
       ],
       "responses": [
         "Haha. Nobody spins a web like Spiderman can!",
+	"I love spiderman too!",
+	"Yeah, spidy is the best!",
+	"It is a shame Stan Lee, creator of spiderman passed away. Thankfully, we can help endangered animals not pass away too!",
         "The spiderman TV series from the 90s was the best one!"
       ]
     },
