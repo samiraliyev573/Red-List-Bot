@@ -1,6 +1,8 @@
 # Red-List-Bot
 Red List bot that informs you about endangered species.
 
+# Description 
+This project involves creation of a chat-bot that can respond to a specific topic of inquiry where the user plays a “role”. The chatbot should be able to complete 30 rounds of smooth, realistic dialogue on a specific topic. The topic chosen for this product was endangered & extinct animal species. Additionally, one aim of the project is to practice project management organization and demonstrate effective use of the software development techniques taught in class.
 
 
 # Features: 
